@@ -35,7 +35,8 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Lovable workspace "Trang's Lovable" (`ISuNR3d5wXthfaFr5bZG`). Project `8698e7a7-7be2-4ef9-87d0-56f82e8d381d`.
   Editor: https://lovable.dev/projects/8698e7a7-7be2-4ef9-87d0-56f82e8d381d
   Preview: https://id-preview--8698e7a7-7be2-4ef9-87d0-56f82e8d381d.lovable.app
-- First pass sent: schema + screens 1-5 + seeded SAMPLE data, NO external API calls. Project knowledge (safeguards, simulated labeling) is set.
+- UPDATE: user chose option A (WhatsApp + SMS only, no web UI). Lovable was told the final scope: backend only, phase 1 = WhatsApp text round trip with a PIN-switched champion mode. User confirmed their Twilio key works. Webhook URL must be set in the Twilio WhatsApp sandbox settings by the user.
+- First pass sent (now superseded): schema + screens 1-5 + seeded SAMPLE data, NO external API calls. Project knowledge (safeguards, simulated labeling) is set.
 - Demo: airplane-mode phone = feature phone; user's WhatsApp = visitor via the Twilio WhatsApp sandbox; SMS digest via Twilio. Phone numbers go ONLY in Lovable secrets (DEMO_SMS_NUMBER, DEMO_WHATSAPP_NUMBER), never in chat or the repo.
 - User reports ElevenLabs and Twilio are connected in Lovable (not verified by Claude). The Twilio 401 on a direct key test was still unresolved at last report.
 - User still to do: link the project to this GitHub repo (Lovable project settings), verify the Twilio number for SMS, join the Twilio WhatsApp sandbox from their WhatsApp.

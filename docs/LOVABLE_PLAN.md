@@ -5,10 +5,13 @@ project is created (creating one spends Pro-plan credits).
 
 ## 0. Decisions so far
 
-- **Channels (decided):** option B. Visitors and Fatou use WhatsApp and SMS only. The web app
-  is just the champion's page: import, weekly sync, review, answer library, plus a small
-  labeled-Simulated "Try a visitor question" panel. The public visitor web page (screen 5
-  below) was dropped; the matching logic stays as a backend function that WhatsApp will call.
+- **Channels (decided, supersedes the earlier option B):** option A. NO web UI. Everything
+  happens on WhatsApp (Twilio sandbox) and SMS (Twilio). The Lovable project is a backend:
+  database + edge functions (`whatsapp-webhook`, `weekly-digest`), plus one minimal static page.
+  Sections 1 and 3 below describe the earlier web-screen design; the flows now run as chat
+  conversations: champion mode (`REVIEW <PIN>`: record round, then 1/2/3 review replies) and
+  visitor mode (default). The PIN switch is a labeled demo shortcut (one phone plays both roles).
+  Phase 1 = text round trip on WhatsApp; ElevenLabs, Lovable AI and voice notes come next.
 - WhatsApp sender: Twilio WhatsApp sandbox. User's own WhatsApp number acts as the visitor.
 
 - Lovable-only architecture. No Python server for the demo. Speech and language steps run in
