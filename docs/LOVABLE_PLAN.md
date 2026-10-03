@@ -29,12 +29,12 @@ project is created (creating one spends Pro-plan credits).
 
 | # | Screen | Who | What it does |
 |---|---|---|---|
-| 1 | Question card + import | Champion | Shows the 10 standard questions in order. Upload the audio files copied from Fatou's feature phone (file import stands in for Bluetooth transfer). Order = question. |
+| 1 | Question card + import | Champion | Shows the 10 standard questions in order. Upload the audio files copied from Noor's feature phone (file import stands in for Bluetooth transfer). Order = question. |
 | 2 | Weekly sync | Champion | One button: transcribe, translate to English, then German and Dutch, round-trip check, voice. Shows progress per answer. |
 | 3 | Review | Champion | Per answer: original audio, transcript, English, German, Dutch. Flags: round-trip mismatch, low confidence, "machine-translated". Numbers, prices and place names highlighted. Actions: approve, re-record, "needs bilingual reviewer". No step needs the champion to read English. |
 | 4 | Answer library | Champion | Approved answers only. |
-| 5 | Visitor page (QR target) | Visitor | Pick a language, ask a question (text, voice optional). Gets the nearest approved answer as text and audio, labeled "machine-translated". Low confidence shows "not sure, Fatou will answer". "Was this clear?" prompt. Neutral review link for everyone. |
-| 6 | Digest (P1) | Fatou | Counts of questions by topic, unanswered questions, feedback. Sent by SMS or call (Twilio) or shown on screen, labeled simulated if not live. |
+| 5 | Visitor page (QR target) | Visitor | Pick a language, ask a question (text, voice optional). Gets the nearest approved answer as text and audio, labeled "machine-translated". Low confidence shows "not sure, Noor will answer". "Was this clear?" prompt. Neutral review link for everyone. |
+| 6 | Digest (P1) | Noor | Counts of questions by topic, unanswered questions, feedback. Sent by SMS or call (Twilio) or shown on screen, labeled simulated if not live. |
 
 ## 2. Data model (Lovable Cloud / Postgres)
 
@@ -88,7 +88,7 @@ TourCoach Gambia: pre-approved answers for tour operators. Rules that always app
 - The champion may not speak English. No review step may require judging English.
 - Every visitor-facing answer is labeled "machine-translated". Wolof translations are
   "unverified" until a bilingual reviewer checks them.
-- Low match confidence: say "not sure, Fatou will answer". Never guess.
+- Low match confidence: say "not sure, Noor will answer". Never guess.
 - Review link is shown neutrally to every visitor. No review gating.
 - Anything simulated (WhatsApp, SMS, sample data) is labeled "Simulated" in the UI.
 - Never expose API keys in client code; use edge functions and secrets.
@@ -102,11 +102,11 @@ TourCoach Gambia: pre-approved answers for tour operators. Rules that always app
 
 ## 9. Demo flow with the user's own phone (DRAFT)
 
-The demo uses the user's own phone as "Fatou's feature phone" and the user's own WhatsApp
+The demo uses the user's own phone as "Noor's feature phone" and the user's own WhatsApp
 as "the visitor". **Phone numbers never go in this repo or in chat.** The user enters them
 as secrets in Lovable (for example `DEMO_SMS_NUMBER`, `DEMO_WHATSAPP_NUMBER`).
 
-1. **Airplane mode ON** = the offline feature phone. Fatou records the ~10 answers with the
+1. **Airplane mode ON** = the offline feature phone. Noor records the ~10 answers with the
    phone's voice recorder. No network needed.
    LABEL IN THE VIDEO: "a smartphone in airplane mode stands in for a feature phone".
 2. **Transfer** = the champion's weekly online moment. Airplane mode OFF, then upload the
@@ -116,7 +116,7 @@ as secrets in Lovable (for example `DEMO_SMS_NUMBER`, `DEMO_WHATSAPP_NUMBER`).
 4. **Visitor on WhatsApp.** The user's WhatsApp number asks a question and gets the
    approved answer back as text plus a voice note, labeled "machine-translated".
 5. **Digest by SMS (Twilio).** Put the phone back in airplane mode, send the digest, then turn
-   airplane mode off on camera: the SMS arrives. This shows "Fatou gets her summary on a
+   airplane mode off on camera: the SMS arrives. This shows "Noor gets her summary on a
    basic phone with no data".
 
 Things to check (my understanding, NOT yet verified, so confirm in the dashboards):
@@ -147,7 +147,7 @@ Things to check (my understanding, NOT yet verified, so confirm in the dashboard
 User wants the full scope, built core-loop-first. Anything unfinished is cut or shown as simulated.
 
 Decisions:
-- **Fatou's voice input = phone call.** A feature phone cannot send WhatsApp voice notes. Fatou
+- **Noor's voice input = phone call.** A feature phone cannot send WhatsApp voice notes. Noor
   calls a Twilio number (or is called); a recorded prompt reads each question; Twilio records
   the answer; it is transcribed. SMS carries text results back. WhatsApp voice notes remain for
   the champion and for customer voice reviews.

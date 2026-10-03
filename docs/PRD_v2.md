@@ -22,7 +22,7 @@ Video one-liner (required format) — DRAFT:
 
 | Who | Device | Connectivity | Role |
 |---|---|---|---|
-| Operator ("Fatou") | Feature phone (MAIN device) | 2G voice/SMS, often none | Records answers from a printed question card; receives SMS/voice-call summaries |
+| Operator ("Noor") | Feature phone (MAIN device) | 2G voice/SMS, often none | Records answers from a printed question card; receives SMS/voice-call summaries |
 | Champion (family member) | Smartphone, used ~weekly | Online only when in town | Transfers recordings (Bluetooth), runs weekly sync, reviews and approves |
 | Visitor | Own smartphone | Hotel wifi / roaming | Scans QR or messages WhatsApp, gets answers |
 
@@ -30,7 +30,7 @@ The champion may NOT speak English. No step may rely on the champion judging Eng
 
 ## 3. Core loop (P0)
 
-1. **Record (offline, feature phone).** Fatou answers ~10 standard questions in order from a
+1. **Record (offline, feature phone).** Noor answers ~10 standard questions in order from a
    printed card (price, meeting point, duration, what to bring, children, food, safety,
    what's included, how to book, cancellation) plus optional free "tour stop" recordings.
    Order identifies the question; no tagging needed.
@@ -47,21 +47,21 @@ The champion may NOT speak English. No step may rely on the champion judging Eng
 5. **Publish.** Approved answers join the answer library.
 6. **Visitor Q&A.** QR code or WhatsApp. The visitor's question (any supported language) is
    matched to the nearest library answer by a small intent classifier. Reply = pre-approved
-   voice + text, labeled "machine-translated". Low-confidence match = "not sure — Fatou will
+   voice + text, labeled "machine-translated". Low-confidence match = "not sure — Noor will
    answer" (never a guess).
 7. **No library answer.** Visitor gets an honest holding message. The question is added to
-   Fatou's next recording round (answer arrives after the next weekly sync).
+   Noor's next recording round (answer arrives after the next weekly sync).
 
 ## 4. Safeguards (pass/fail — design in)
 
-- Fixed list of answers: the tool only says what Fatou recorded and approved.
+- Fixed list of answers: the tool only says what Noor recorded and approved.
 - Human in the loop: champion approves every library entry; the tool never acts alone.
 - Translation safeguard (no assumed English-speaking human): round-trip consistency check,
   low-confidence flags, a "bilingual reviewer" role in the design, and a visitor
   "was this clear?" prompt that sends low-scored answers back to review.
 - Honest labeling: every visitor-facing answer says it is machine-translated; translations
   of the Gambian language are **unverified** until a bilingual reviewer checks them.
-- Voice cloning: OPTIONAL, only after Fatou gives recorded, explicit consent; output labeled
+- Voice cloning: OPTIONAL, only after Noor gives recorded, explicit consent; output labeled
   AI-generated; default is a neutral stock voice.
 - Consent and data: visitor feedback shared with the operator only after opt-in; voice
   recordings deletable on request; state the retention policy in the video; note that EU
@@ -72,7 +72,7 @@ The champion may NOT speak English. No step may rely on the champion judging Eng
 ## 5. Secondary features
 
 - **P1 Weekly digest.** On the same sync: counts of visitor questions by topic, unanswered
-  questions, visitor feedback themes. Delivered to Fatou by SMS or an outbound voice call.
+  questions, visitor feedback themes. Delivered to Noor by SMS or an outbound voice call.
   Fixed recommendation templates (pre-translated, flagged "needs native review"), no free
   generation.
 - **P2 Pricing range.** A labeled market range with an "ask a person" flag. No pricing
