@@ -202,3 +202,10 @@ Build order:
   we never post a review ourselves, light clean-up only (no new facts or sentiment changes).
 - 2E: 3 fictional sample partners, opt-in, round-robin, no money, Simulated. 2F: draft listing from
   approved answers only, nothing published, Simulated.
+
+## 14. Synthetic Wolof test audio (user decision, 2026-10-03)
+- No Wolof speaker is available, so the demo and tests use SYNTHETIC clips: ElevenLabs reading
+  Wolof text written by Claude (unverified). Files and manifest: `docs/test_audio/`. 10 clips, one per question.
+- Consequences to state in the video: the Wolof input is synthetic; recognition accuracy on a real
+  Wolof speaker is UNTESTED; the Wolof text itself is unverified. Never present these clips as Noor's real voice.
+- Demo: play a clip into the phone during the call (laptop speaker) or send the file on WhatsApp.

@@ -1,17 +1,19 @@
-# SYNTHETIC test audio (plumbing tests only)
+# SYNTHETIC test audio (plumbing tests and a labeled demo only)
 
-These two clips were generated with ElevenLabs text-to-speech (`eleven_v3`, a stock American-accent
-voice) reading Wolof text. ElevenLabs has NO Wolof voice, so this is NOT real Wolof speech.
-
-- `SYNTHETIC_price_wolof_attempt.mp3`: text "Njëg bi mooy junni ak juróom téeméer dalasi." (intended: "The price is 1500 dalasi.")
-- `SYNTHETIC_duration_wolof_attempt.mp3`: text "Tuur bi dafay yagg ñett waxtu." (intended: "The tour lasts three hours.")
-
+Generated with ElevenLabs text-to-speech (`eleven_v3`, one stock American-accent voice) reading Wolof
+text. ElevenLabs has NO Wolof voice, so these are NOT real Wolof speech and NOT Noor's voice.
 The Wolof text was written by Claude and has NOT been checked by a native speaker.
 
-ElevenLabs Scribe (`scribe_v2`, `language_code=wol`) returned, for the same clips (v3):
-- price: "Niech by mój juni, a k jurą te mer dalasy." (partly right: numbers/currency roughly recovered, rest garbled)
-- duration: "Tourbi dafay yagn net wahtu" (close)
+Files: `SYNTHETIC_q01_price.mp3` ... `SYNTHETIC_q10_cancellation.mp3` (one per standard question, in
+order) plus two earlier attempts (`SYNTHETIC_price_wolof_attempt.mp3`, `SYNTHETIC_duration_wolof_attempt.mp3`).
+`manifest.csv` lists, per clip: the Wolof text, the intended English meaning, and what ElevenLabs Scribe
+(`scribe_v2`, `language_code=wol`) heard.
 
-Use ONLY to test that upload, download, transcription, translation and review steps run.
-Do NOT use them to claim Wolof recognition accuracy, and never present them as Noor's voice or as real data.
-Real accuracy needs a recording by a native Wolof speaker.
+What Scribe heard is close for most clips and wrong in places (for example q01 "Njëg bi" became
+"Niech by mój"). This says nothing about accuracy on a real Wolof speaker.
+
+Rules:
+- Use them to test that upload/download, transcription, translation, the round-trip check and the review steps run.
+- In any demo or video, say clearly: "synthetic test audio, not a real Wolof speaker".
+- Never present them as real data, and never use them to claim Wolof recognition accuracy.
+- Real accuracy needs a recording by a native Wolof speaker (none available as of 2026-10-03).

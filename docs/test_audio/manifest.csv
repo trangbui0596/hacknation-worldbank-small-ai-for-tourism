@@ -1,0 +1,11 @@
+q,topic,wolof_text_unverified,intended_english,scribe_heard_wol,file
+1,price,Njëg bi mooy junni ak juróom téeméer dalasi.,The price is 1500 dalasi.,Niech by mój juniak jurom témér dalasi.,SYNTHETIC_q01_price.mp3
+2,meeting point,Dinanu daje ci Tanji Bridge.,We meet at Tanji Bridge.,Dinanu Daichi Tanji Bridge,SYNTHETIC_q02_meeting_point.mp3
+3,duration,Tuur bi dafay yagg ñett waxtu.,The tour lasts three hours.,Tour bi dafa yagnat waxtu,SYNTHETIC_q03_duration.mp3
+4,what to bring,Indil ndox ak kaaskeet.,Bring water and a hat.,Indildox ak kaskit,SYNTHETIC_q04_what_to_bring.mp3
+5,children,"Xale yi mën nañu ñëw, te fey wuñu dara.",Children can come and do not pay.,Haleyi men nanyu nyu te fe wunyu dara,SYNTHETIC_q05_children.mp3
+6,food,Dinanu lekk ceebu jën ci digg bi.,We eat rice and fish in the middle of the tour.,Dina nu lekk cebu jen ci dig bi.,SYNTHETIC_q06_food.mp3
+7,safety,Dinanu jox gilet bu ne.,We give a life jacket to everyone.,Tinanu jox jilet buñe,SYNTHETIC_q07_safety.mp3
+8,included,Njëg bi dafa ëmb añ ak ndox.,The price includes lunch and water.,Ñieg bi dafa mb an ak ndosh,SYNTHETIC_q08_included.mp3
+9,how to book,"Bindal ma ci WhatsApp, benn fan balaa tuur bi.",Message me on WhatsApp one day before the tour.,Bindal ma ci WhatsApp. Bën fan bala tour bi.,SYNTHETIC_q09_how_to_book.mp3
+10,cancellation,Mën nga neenal ba benn fan balaa tuur bi te fey wuñu la dara.,You can cancel up to one day before and pay nothing.,Mën nga ninal ba ben fan balaa turbi te fe wunu la dara.,SYNTHETIC_q10_cancellation.mp3
