@@ -52,6 +52,10 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Preview screenshot from `get_project` showed a generic "This page didn't load" error page; the minimal index page has not been verified.
 - Phase 2 (next): wire ElevenLabs scribe_v2 (wol) transcription, Lovable AI translation + round trip, ElevenLabs TTS voice notes, then the evaluation and the video.
 
+## Update 5: full scope decided (see docs/LOVABLE_PLAN.md section 10)
+- User declined to publish yet: wants the full scope built first. Build order 2A core loop, 2B call input, 2C voice review paste, 2D coaching digest, 2E cross-community (scripted), 2F Google listing preview (simulated).
+- Fatou's input is a PHONE CALL to a Twilio number. Google Maps = demo only. Review data = REAL ONLY (no synthetic).
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never

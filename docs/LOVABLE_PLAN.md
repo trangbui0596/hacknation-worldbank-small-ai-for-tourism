@@ -140,3 +140,32 @@ Things to check (my understanding, NOT yet verified, so confirm in the dashboard
 - WhatsApp: the user wants real WhatsApp with their own number as the visitor. Which sender?
   (a) Twilio WhatsApp sandbox (fastest), (b) Meta WhatsApp Business test number.
 - Which country is the demo phone in? (affects Twilio SMS permissions)
+
+
+## 10. Full scope and build order (decided 2026-10-03)
+
+User wants the full scope, built core-loop-first. Anything unfinished is cut or shown as simulated.
+
+Decisions:
+- **Fatou's voice input = phone call.** A feature phone cannot send WhatsApp voice notes. Fatou
+  calls a Twilio number (or is called); a recorded prompt reads each question; Twilio records
+  the answer; it is transcribed. SMS carries text results back. WhatsApp voice notes remain for
+  the champion and for customer voice reviews.
+- **Google Maps = demo only.** The agent drafts a listing (name, category, description, hours,
+  services) for a human to submit. Shown as a preview labeled Simulated. Nothing is published.
+- **Review data = real data only.** No synthetic reviews. Coverage for The Gambia is likely thin,
+  so the coaching may be generic or say "not enough real data". Source via the Google Maps
+  Platform connector (Places reviews, limited and bound by Google's terms: unverified here).
+  Always state source, date and count; never present guesses as findings.
+
+Build order:
+1. **2A core loop:** ElevenLabs transcription (Wolof), Lovable AI translation (Wolof to English,
+   English to German/Dutch), round-trip check, ElevenLabs voice replies as WhatsApp audio.
+2. **2B voice call input** (Twilio Voice record, transcribe, same pipeline).
+3. **2C customer one-click voice review:** a visitor sends a voice note, it is transcribed and
+   turned into a ready-to-paste review text (visitor approves before anything is posted).
+4. **2D coaching digest:** synthesize real review data into product and pricing coaching for the
+   champion by SMS/call. Pricing = labeled range with an "ask a person" flag, no auto changes.
+5. **2E cross-community recommendation:** opt-in, scripted rotation, no cash, champion mediates.
+   Scripted demo, labeled Simulated.
+6. **2F Google listing preview** (Simulated).
