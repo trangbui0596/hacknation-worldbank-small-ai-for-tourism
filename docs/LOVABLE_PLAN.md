@@ -5,6 +5,12 @@ project is created (creating one spends Pro-plan credits).
 
 ## 0. Decisions so far
 
+- **Channels (decided):** option B. Visitors and Fatou use WhatsApp and SMS only. The web app
+  is just the champion's page: import, weekly sync, review, answer library, plus a small
+  labeled-Simulated "Try a visitor question" panel. The public visitor web page (screen 5
+  below) was dropped; the matching logic stays as a backend function that WhatsApp will call.
+- WhatsApp sender: Twilio WhatsApp sandbox. User's own WhatsApp number acts as the visitor.
+
 - Lovable-only architecture. No Python server for the demo. Speech and language steps run in
   Lovable Cloud edge functions. (This changes PRD v2 section 6; see "What changes vs the PRD".)
 - Workspace: "Trang's Lovable" (id `ISuNR3d5wXthfaFr5bZG`, Pro plan, 0 projects, owner).
