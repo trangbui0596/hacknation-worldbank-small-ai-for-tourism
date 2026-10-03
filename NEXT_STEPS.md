@@ -42,6 +42,16 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - User still to do: link the project to this GitHub repo (Lovable project settings), verify the Twilio number for SMS, join the Twilio WhatsApp sandbox from their WhatsApp.
 - Next build steps: wire `transcribe` (ElevenLabs scribe_v2, wol), `translate`/`roundtrip` (Lovable AI), `match`, `speak`; then Twilio SMS/WhatsApp; then evaluation and video.
 
+## Update 4: Lovable phase 1 built (option A, backend only)
+- Lovable commit `d6f29e2` (message umsg_01m41ssq7jexksjc6qh7zw2h5d, ~5.9 credits). NOT yet tested with real messages. Only checked: unsigned webhook calls and digest calls without the secret header get rejected.
+- This Lovable stack has no edge functions; the backend is two TanStack server routes: `POST /api/public/whatsapp-webhook` and `POST /api/public/weekly-digest` (header `x-digest-secret`). Logic: `src/lib/tourcoach.server.ts` in the Lovable project. Placeholders for transcribe/translate/roundtrip/speak return null (phase 2).
+- Twilio sandbox webhook (after PUBLISHING the project): `https://project--8698e7a7-7be2-4ef9-87d0-56f82e8d381d.lovable.app/api/public/whatsapp-webhook`, HTTP POST. If signature checks fail, add secret `TWILIO_WEBHOOK_URL` = that exact URL.
+- Secrets the user must enter in Lovable (Project Settings -> Secrets), never in chat: `DEMO_CHAMPION_PIN`, `DEMO_SMS_NUMBER` (user's phone, receives digest), `DEMO_WHATSAPP_NUMBER` (the Twilio SANDBOX sender number, NOT the user's own), `TWILIO_AUTH_TOKEN`, `TWILIO_SMS_FROM` (Twilio SMS sender), `DIGEST_TRIGGER_SECRET`, optional `GOOGLE_REVIEW_URL`. `PHONE_HASH_SALT` is auto-generated.
+- Twilio WhatsApp sandbox ("Try out WhatsApp") showed "98 free messages left" on 2026-10-03. Budget test messages; every bot reply likely counts.
+- Lovable advice: enable Twilio SMS Pumping Protection and limit SMS Geo Permissions before real texts.
+- Preview screenshot from `get_project` showed a generic "This page didn't load" error page; the minimal index page has not been verified.
+- Phase 2 (next): wire ElevenLabs scribe_v2 (wol) transcription, Lovable AI translation + round trip, ElevenLabs TTS voice notes, then the evaluation and the video.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
