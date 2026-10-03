@@ -63,6 +63,14 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Preview screenshot still shows "This page didn't load"; unverified. Project display name still "Fatou's Voice" (Lovable cannot rename it; user must rename in project settings).
 - User still to do: enter secrets, publish, set Twilio sandbox webhook, later Twilio Voice webhook, add Google Maps Platform connector for phase 2D.
 
+## Update 7: PUBLISHED (2026-10-03 ~22:50 UTC)
+- Lovable project published (deployment 556236ef-6957-4378-9806-85461500243c): **https://fatous-friendly-guide.lovable.app** (slug contains the old name; rename in Lovable publish settings if desired, then update every Twilio webhook).
+- NOTE: this differs from the `project--8698e7a7-....lovable.app` address that Lovable's README suggested. Use the published address above for Twilio webhooks.
+- Webhooks to set in Twilio (all HTTP POST): WhatsApp sandbox "When a message comes in" -> `/api/public/whatsapp-webhook`; phone number "A call comes in" -> `/api/public/voice-incoming`; "Call status changes" -> `/api/public/voice-status`. Also add secret `TWILIO_WEBHOOK_URL` = the full whatsapp-webhook URL (voice routes use its origin).
+- All queued phases landed before publishing: 2G agent (b37fb87), 2C voice feedback (a6eb4ef), 2E/2F demos (96a213a), Teranga rename (6c26580), SMS templates + WhatsApp fallback (2f7f831). Claude has NOT yet read their test reports and could not test the live app (sandbox network blocks lovable.app).
+- User reports the secrets are entered, Twilio number obtained, A2P campaign form in progress (policy pages on Google Docs, not yet made public by the user).
+- Next: user does the Twilio webhooks, then first test: send "hello" on WhatsApp (expect "Not sure, Noor will answer." + clarity question + review line).
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
