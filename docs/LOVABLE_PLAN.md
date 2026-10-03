@@ -1,4 +1,4 @@
-# TourCoach Gambia: Lovable build plan (DRAFT for review, nothing built yet)
+# Teranga Gambia: Lovable build plan (DRAFT for review, nothing built yet)
 
 Companion to `docs/PRD_v2.md`. Status: waiting for the user's sign-off before any Lovable
 project is created (creating one spends Pro-plan credits).
@@ -21,7 +21,7 @@ project is created (creating one spends Pro-plan credits).
   (not verifiable from Claude's side; the connector list shows availability, not connection).
   WhatsApp Business: sender option still to be chosen (see section 9). Lovable Cloud and
   Lovable AI are already available.
-- Project knowledge (not workspace knowledge) holds the TourCoach rules, so unrelated
+- Project knowledge (not workspace knowledge) holds the Teranga rules, so unrelated
   projects in the workspace are not affected.
 - GitHub sync: the user links the new project to this repo in Lovable's GitHub settings.
 
@@ -83,7 +83,7 @@ Recordings are deletable on request.
 ## 6. Draft project knowledge (to paste into the Lovable project)
 
 ```
-TourCoach Gambia: pre-approved answers for tour operators. Rules that always apply:
+Teranga Gambia: pre-approved answers for tour operators. Rules that always apply:
 - The tool only says what the operator recorded and the champion approved. Never invent answers.
 - The champion may not speak English. No review step may require judging English.
 - Every visitor-facing answer is labeled "machine-translated". Wolof translations are
@@ -209,3 +209,11 @@ Build order:
 - Consequences to state in the video: the Wolof input is synthetic; recognition accuracy on a real
   Wolof speaker is UNTESTED; the Wolof text itself is unverified. Never present these clips as Noor's real voice.
 - Demo: play a clip into the phone during the call (laptop speaker) or send the file on WhatsApp.
+
+## 15. Product name (user decision, 2026-10-03)
+- The product is now called **Teranga** (Wolof for hospitality; confirmed by web search of Wolof sources, see
+  e.g. teranga = "making a stranger feel like family"). "TourCoach" is retired. Persona stays Noor.
+- NOT checked: trademark, domain or app-store conflicts. "Teranga" is a common word and brand name
+  (also the Senegalese hospitality motto), so expect other uses. Do not claim exclusive branding.
+- Avoid the word "Waxal" (Wolof for "speak"): it is the name of Google's 2026 African speech dataset.
+- Lovable still shows the old display name; the user must rename the project in settings.

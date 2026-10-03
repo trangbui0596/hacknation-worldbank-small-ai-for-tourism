@@ -1,4 +1,4 @@
-# TourCoach Gambia — PRD v2 ("Record once, translate weekly")
+# Teranga Gambia — PRD v2 ("Record once, translate weekly")
 
 Track: World Bank x Hack-Nation "Small AI for Development" — Tourism (Annex C).
 Submission: 9:00 AM ET, Oct 4, 2026. Required: working prototype + 2–5 min video.
