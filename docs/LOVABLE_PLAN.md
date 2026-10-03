@@ -8,8 +8,10 @@ project is created (creating one spends Pro-plan credits).
 - Lovable-only architecture. No Python server for the demo. Speech and language steps run in
   Lovable Cloud edge functions. (This changes PRD v2 section 6; see "What changes vs the PRD".)
 - Workspace: "Trang's Lovable" (id `ISuNR3d5wXthfaFr5bZG`, Pro plan, 0 projects, owner).
-- Connectors to add in the Lovable dashboard (by the user, not Claude): ElevenLabs,
-  WhatsApp Business, Twilio. Lovable Cloud and Lovable AI are already available.
+- Connectors: the user reports ElevenLabs and Twilio are connected in the Lovable dashboard
+  (not verifiable from Claude's side; the connector list shows availability, not connection).
+  WhatsApp Business: sender option still to be chosen (see section 9). Lovable Cloud and
+  Lovable AI are already available.
 - Project knowledge (not workspace knowledge) holds the TourCoach rules, so unrelated
   projects in the workspace are not affected.
 - GitHub sync: the user links the new project to this repo in Lovable's GitHub settings.
@@ -89,9 +91,43 @@ TourCoach Gambia: pre-approved answers for tour operators. Rules that always app
 > Build screens 1 to 5 from docs/PRD_v2.md and docs/LOVABLE_PLAN.md using Lovable Cloud. Start
 > with the schema and seeded sample data, labeled sample. No external API calls yet.
 
+## 9. Demo flow with the user's own phone (DRAFT)
+
+The demo uses the user's own phone as "Fatou's feature phone" and the user's own WhatsApp
+as "the visitor". **Phone numbers never go in this repo or in chat.** The user enters them
+as secrets in Lovable (for example `DEMO_SMS_NUMBER`, `DEMO_WHATSAPP_NUMBER`).
+
+1. **Airplane mode ON** = the offline feature phone. Fatou records the ~10 answers with the
+   phone's voice recorder. No network needed.
+   LABEL IN THE VIDEO: "a smartphone in airplane mode stands in for a feature phone".
+2. **Transfer** = the champion's weekly online moment. Airplane mode OFF, then upload the
+   recordings in the app's import screen. This stands in for the Bluetooth/file transfer in
+   PRD v2. LABEL: "upload simulates Bluetooth transfer".
+3. **Weekly sync + review + approve** in the app (screens 2 to 4).
+4. **Visitor on WhatsApp.** The user's WhatsApp number asks a question and gets the
+   approved answer back as text plus a voice note, labeled "machine-translated".
+5. **Digest by SMS (Twilio).** Put the phone back in airplane mode, send the digest, then turn
+   airplane mode off on camera: the SMS arrives. This shows "Fatou gets her summary on a
+   basic phone with no data".
+
+Things to check (my understanding, NOT yet verified, so confirm in the dashboards):
+- A personal WhatsApp number cannot also be the business sender. The user's number can act as
+  the visitor. The sender must be a different number: either the Twilio WhatsApp sandbox
+  (visitor sends a join code first) or a Meta WhatsApp Business test number (can message
+  only recipients added to an allow list).
+- WhatsApp only allows free-form replies within 24 hours of the visitor's last message.
+  The demo is visitor-initiated, so this fits.
+- A Twilio trial account usually can only text numbers verified in the Twilio console, and
+  adds a "trial account" prefix. A US Twilio number texting a non-US number may need that
+  country enabled in Twilio's geo permissions.
+- Real SMS or WhatsApp that works live is "real". Anything pre-recorded or scripted must be
+  labeled "simulated".
+
 ## 8. Open questions for the user
 
 - Approve the screens and build order above?
 - Is it acceptable that the NLLB score is dropped (see section 5)?
 - Who is the "champion" role in the demo: one login, or a shared demo account?
-- Do you have a Meta business account for WhatsApp, or should WhatsApp be simulated?
+- WhatsApp: the user wants real WhatsApp with their own number as the visitor. Which sender?
+  (a) Twilio WhatsApp sandbox (fastest), (b) Meta WhatsApp Business test number.
+- Which country is the demo phone in? (affects Twilio SMS permissions)
