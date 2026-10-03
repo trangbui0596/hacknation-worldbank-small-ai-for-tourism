@@ -16,7 +16,14 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Network: HuggingFace, World Bank and Wikivoyage reachable. Kaggle and Overpass were
   blocked/flaky (add `kaggle.com` to the environment's allowed domains if needed).
 
-## Blocked on
+## Update (new session): steps 1-2 DONE
+- `ELEVENLABS_API_KEY` is visible and works (Creator tier, 130,965 characters of credit, none used).
+- Speech to Text (`scribe_v1`, `scribe_v2`) ACCEPTS Wolof (`wol`). It REJECTS Mandinka (`mnk`) and Bambara (`bam`).
+  Caveat: the API accepting the code does not prove good accuracy. We still need a real Wolof audio sample.
+- Text to Speech covers English, German and Dutch on `eleven_v3`, `eleven_v4` and `eleven_multilingual_v2`. It has NO Wolof/Mandinka voice.
+- Decision: Wolof is the demo language. Fallback ASR: Meta MMS.
+
+## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
   print or commit the key; read it from the environment only.
