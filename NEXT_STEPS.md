@@ -64,8 +64,8 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - User still to do: enter secrets, publish, set Twilio sandbox webhook, later Twilio Voice webhook, add Google Maps Platform connector for phase 2D.
 
 ## Update 7: PUBLISHED (2026-10-03 ~22:50 UTC)
-- Lovable project published (deployment 556236ef-6957-4378-9806-85461500243c): **https://fatous-friendly-guide.lovable.app** (slug contains the old name; rename in Lovable publish settings if desired, then update every Twilio webhook).
-- NOTE: this differs from the `project--8698e7a7-....lovable.app` address that Lovable's README suggested. Use the published address above for Twilio webhooks.
+- Lovable project published at **https://teranga-gambia.lovable.app** (deployment d1711594-e248-4ef2-ab19-5488727bc274, republished after a crash fix). Earlier publish had a start-up crash: a module-scope `Response` in the WhatsApp webhook broke every route on the live host (fixed in Lovable commit c27126f; AGENTS.md now forbids it).
+- NOTE: this differs from the `project--8698e7a7-....lovable.app` address that Lovable's README suggested. Use the published address above for ALL Twilio webhooks and for `TWILIO_WEBHOOK_URL`.
 - Webhooks to set in Twilio (all HTTP POST): WhatsApp sandbox "When a message comes in" -> `/api/public/whatsapp-webhook`; phone number "A call comes in" -> `/api/public/voice-incoming`; "Call status changes" -> `/api/public/voice-status`. Also add secret `TWILIO_WEBHOOK_URL` = the full whatsapp-webhook URL (voice routes use its origin).
 - All queued phases landed before publishing: 2G agent (b37fb87), 2C voice feedback (a6eb4ef), 2E/2F demos (96a213a), Teranga rename (6c26580), SMS templates + WhatsApp fallback (2f7f831). Claude has NOT yet read their test reports and could not test the live app (sandbox network blocks lovable.app).
 - User reports the secrets are entered, Twilio number obtained, A2P campaign form in progress (policy pages on Google Docs, not yet made public by the user).
