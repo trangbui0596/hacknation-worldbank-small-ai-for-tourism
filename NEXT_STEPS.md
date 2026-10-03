@@ -77,6 +77,13 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Still to test live: visitor price question, champion mode (REVIEW <PIN>, START, synthetic voice clip), phone call (voice-incoming), agent chat, FEEDBACK voice review, MORE/LISTING demos, digest trigger + SMS/WhatsApp fallback.
 - Sandbox free message budget: watch the "messages left" counter.
 
+## Update 9: pipeline reliability fixes landed (2026-10-03 ~23:50 UTC)
+- LIVE-VERIFIED by the user: WhatsApp visitor reply; champion START + synthetic Wolof clip -> Wolof transcript visible in REVIEW (also an English clip -> English transcript). Speech-to-text on the real clip: 200 in ~0.5 s (Lovable local run).
+- Root problem fixed: background work after the response is cut off on the Workers host. Now resumable stages (received -> transcribed -> translated -> checked), request-time work (~11 s budget), `finishAnswers`, `POST /api/public/process-pending` (header x-digest-secret). Lovable commit b7f9a63. Approved-answer voice files (EN/DE/NL) now made inside the approval or visitor request (commit 04fb395, 31 tests pass, real German TTS 3.3 s locally).
+- Republished at https://teranga-gambia.lovable.app after each fix.
+- NOT yet verified live: approving an answer (voice files within ~10 s), a visitor getting a voice note, phone call, agent chat, FEEDBACK, MORE/LISTING demos, digest + SMS/WhatsApp fallback.
+- Sandbox free messages left: 70 at 23:45 UTC. Suggested secret MAX_OUTBOUND_PER_DAY=30 for tonight.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
