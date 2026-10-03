@@ -169,3 +169,9 @@ Build order:
 5. **2E cross-community recommendation:** opt-in, scripted rotation, no cash, champion mediates.
    Scripted demo, labeled Simulated.
 6. **2F Google listing preview** (Simulated).
+
+## 11. Demo adjustment (user decision, 2026-10-03)
+- Phone-call input needs voice signal, so the demo turns OFF mobile data and Wi-Fi instead of using
+  airplane mode. This still shows a phone with no internet, like a feature phone on 2G voice.
+  LABEL IN THE VIDEO: "a smartphone with data and Wi-Fi off stands in for a feature phone".
+- Airplane mode can still be used for the offline voice-recording part before going online.
