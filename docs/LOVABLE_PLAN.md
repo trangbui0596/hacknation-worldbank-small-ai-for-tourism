@@ -188,3 +188,17 @@ Build order:
 - Risks: Wolof output from the LLM is weak and labeled "machine-generated, unverified"; sandbox has
   a small free message budget; more features before the 9:00 AM ET Oct 4 deadline means more
   untested code. Cut 2E/2F first if time runs short.
+
+## 13. Queue status (2026-10-03, late evening UTC)
+- Keep 2E and 2F (user decision). Order in Lovable: 2B DONE (commit 8e9cdd0, 4.8 credits) -> 2G agent
+  (queued) -> 2C voice reviews (queued) -> 2E + 2F scripted demos (queued) -> 2D coaching digest
+  (NOT queued: waits for the Google Maps Platform connector and API key from the user).
+- 2B adds routes `voice-incoming`, `voice-recorded`, `voice-status`. Twilio number voice settings:
+  "A call comes in" -> `/api/public/voice-incoming`, "Call status changes" -> `/api/public/voice-status`,
+  both HTTP POST. Only calls from the number in DEMO_SMS_NUMBER are accepted.
+- 2B tested without a real call: bad signature, unknown caller, TwiML for Q1/Q10/empty retry/cap.
+  NOT tested: real call, real recording download/transcription, summary SMS delivery.
+- 2C safeguards: no rating-first routing, same link for everyone, share with operator only on SHARE,
+  we never post a review ourselves, light clean-up only (no new facts or sentiment changes).
+- 2E: 3 fictional sample partners, opt-in, round-robin, no money, Simulated. 2F: draft listing from
+  approved answers only, nothing published, Simulated.
