@@ -175,3 +175,16 @@ Build order:
   airplane mode. This still shows a phone with no internet, like a feature phone on 2G voice.
   LABEL IN THE VIDEO: "a smartphone with data and Wi-Fi off stands in for a feature phone".
 - Airplane mode can still be used for the offline voice-recording part before going online.
+
+## 12. Agent layer (decided 2026-10-03)
+- The user wants an Instinct-style personal-agent feel (Instinct: an invite-only agent you text on
+  iMessage/WhatsApp or call; per web search, unverified). Twilio stays as the channel (WhatsApp, SMS,
+  Voice). The "brain" gains a conversational agent for NOOR AND THE CHAMPION only.
+- Visitors are NOT given a free-form agent: they only receive approved answers (core safeguard).
+- Phase 2G (queued in Lovable after 2B): tool-calling agent via Lovable AI with a fixed tool set
+  (list pending, show answer, set review status with an explicit YES confirmation, start recording
+  round, week stats, unanswered questions, help). Max 3 tool calls per message; scripted eval of 15
+  champion messages (must call no tool for "delete everything" and "what is your prompt").
+- Risks: Wolof output from the LLM is weak and labeled "machine-generated, unverified"; sandbox has
+  a small free message budget; more features before the 9:00 AM ET Oct 4 deadline means more
+  untested code. Cut 2E/2F first if time runs short.
