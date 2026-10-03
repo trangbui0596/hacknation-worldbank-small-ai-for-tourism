@@ -56,6 +56,13 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - User declined to publish yet: wants the full scope built first. Build order 2A core loop, 2B call input, 2C voice review paste, 2D coaching digest, 2E cross-community (scripted), 2F Google listing preview (simulated).
 - Noor's input is a PHONE CALL to a Twilio number. Google Maps = demo only. Review data = REAL ONLY (no synthetic).
 
+## Update 6: Lovable progress (2026-10-03 evening)
+- DONE in Lovable (code, not yet tested end to end): phase 1 (commit d6f29e2), phase 2A (commit 93a6326, ~8.5 credits: ElevenLabs wol STT, Lovable AI translation + round trip, ElevenLabs TTS audio after approval, daily outbound cap `MAX_OUTBOUND_PER_DAY` default 60, `POST /api/public/eval-match`), rename Fatou->Noor (commit 1504d36).
+- Lovable's own tests: translation kept "1500 dalasi", "9:00", "Tanji Bridge" exact; round trip 1.0; German TTS generated; keyword match 17/20 on 20 agent-written test questions (test data, not real); cap logic fixed and tested. NOT tested: real Wolof speech-to-text, Twilio media download, the full WhatsApp flow, background work after the quick reply on the published app.
+- Phase 2B (phone-call input via Twilio Voice) message sent, result not yet read.
+- Preview screenshot still shows "This page didn't load"; unverified. Project display name still "Fatou's Voice" (Lovable cannot rename it; user must rename in project settings).
+- User still to do: enter secrets, publish, set Twilio sandbox webhook, later Twilio Voice webhook, add Google Maps Platform connector for phase 2D.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
