@@ -10,7 +10,7 @@ Teranga lets a tour operator record answers about their tours. A family helper r
 ## SMS Terms
 - **Program:** Teranga SMS notifications to the tour operator who has agreed to receive them: a summary after a recording call and an optional weekly digest.
 - **Consent:** the recipient agrees before any message is sent, for example verbally during onboarding.
-- **Message frequency:** up to 2 messages per week.
+- **Message frequency:** up to 10 messages per week.
 - **Message and data rates may apply.**
 - **Opt out:** reply STOP at any time. Reply HELP for help, or contact {{CONTACT_EMAIL}}.
 - Carriers are not liable for delayed or undelivered messages.

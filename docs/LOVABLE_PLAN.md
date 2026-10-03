@@ -217,3 +217,10 @@ Build order:
   (also the Senegalese hospitality motto), so expect other uses. Do not claim exclusive branding.
 - Avoid the word "Waxal" (Wolof for "speak"): it is the name of Google's 2026 African speech dataset.
 - Lovable still shows the old display name; the user must rename the project in settings.
+
+## 16. A2P campaign pages (2026-10-03)
+- Privacy Policy and Terms & Conditions were created as two Google Docs in the user's Drive (brand "Teranga",
+  public contact = the user's chosen email, "up to 10 messages per week" to match the consent script entered in
+  the Twilio form). The repo copies in `docs/legal/` keep placeholders (no personal email committed).
+- The Drive connector cannot set "anyone with the link"; the user must change sharing (or File > Share > Publish to web).
+- The campaign review can take weeks; the demo must not depend on it. Keep the WhatsApp fallback for digest/call summary.
