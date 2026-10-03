@@ -71,6 +71,12 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - User reports the secrets are entered, Twilio number obtained, A2P campaign form in progress (policy pages on Google Docs, not yet made public by the user).
 - Next: user does the Twilio webhooks, then first test: send "hello" on WhatsApp (expect "Not sure, Noor will answer." + clarity question + review line).
 
+## Update 8: FIRST LIVE WHATSAPP REPLY WORKS (2026-10-03 ~23:30 UTC)
+- Live app https://teranga-gambia.lovable.app answers WhatsApp "hello" via the Twilio sandbox (sender +14155238886; the earlier +1 737 number was an old sandbox). Fix history: module-scope Response crash (fixed), wrong DEMO_WHATSAPP_NUMBER secret (sandbox sender had changed), sandbox webhook pointed at an old address.
+- Lovable states all env reads happen at request time (secrets apply without republish); not independently verified.
+- Still to test live: visitor price question, champion mode (REVIEW <PIN>, START, synthetic voice clip), phone call (voice-incoming), agent chat, FEEDBACK voice review, MORE/LISTING demos, digest trigger + SMS/WhatsApp fallback.
+- Sandbox free message budget: watch the "messages left" counter.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
