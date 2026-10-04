@@ -89,6 +89,11 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - 2D review scanning/coaching built (commit 7329e39, ~7.2 credits): Google Places (New) via the user's Google Maps connector. One local run: 15 places, 70 reviews (2019-04 to 2026-08), top themes guide quality 56/70, wildlife 30, booking/communication 15; no price mentions found; 5 coaching actions each based on only 2 complaints out of 70 (weak evidence, labeled). No raw review text or author names stored. WhatsApp COACH only reads results cached for 24 h; fresh run = POST /api/public/coach-run with header x-digest-secret (~26 s). Nothing refreshes it on a schedule: run it before the demo. COACH / COACH MORE not yet tested on real WhatsApp; AI theme labels not hand-checked.
 - Remaining live tests: phone call, digest SMS + WhatsApp fallback, voice note for visitors, agent chat, FEEDBACK, MORE/LISTING demos, COACH.
 
+## Update 11: SMS blocked by A2P (2026-10-04 ~01:30 UTC)
+- Live phone call test WORKED (voice enabled on the Twilio number). The post-call summary arrived on WhatsApp via the built-in SMS->WhatsApp fallback, because the number shows "Messaging disabled: complete A2P registration". A2P brand registration is complete; the CAMPAIGN is "In Review" (can take days to weeks). No real SMS sandbox exists for US numbers; WhatsApp sandbox is the working path. If the campaign is approved, SMS should start working with no code change.
+- Demo plan: say clearly that SMS awaits carrier registration and the fallback delivered the message on WhatsApp; showing the A2P status screen is honest evidence.
+- Queued in Lovable at this point: Wolof-first COACH (templates, COACH EN), call scoped to 2 questions (price pos 1, children pos 5) with slower pacing and "Got [N] of [M] answers", read-only log diagnosis of the SMS failure.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
