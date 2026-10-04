@@ -84,6 +84,11 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - NOT yet verified live: approving an answer (voice files within ~10 s), a visitor getting a voice note, phone call, agent chat, FEEDBACK, MORE/LISTING demos, digest + SMS/WhatsApp fallback.
 - Sandbox free messages left: 70 at 23:45 UTC. Suggested secret MAX_OUTBOUND_PER_DAY=30 for tonight.
 
+## Update 10: matcher fix verified live; 2D coaching built (2026-10-04 ~00:45 UTC)
+- LIVE-VERIFIED by the user: champion approves a real answer (reply 1) and a visitor asking "How much does it cost?" gets the real approved answer (matcher fix be10ec3: topic scoring, real preferred over sample, approval refused while untranslated).
+- 2D review scanning/coaching built (commit 7329e39, ~7.2 credits): Google Places (New) via the user's Google Maps connector. One local run: 15 places, 70 reviews (2019-04 to 2026-08), top themes guide quality 56/70, wildlife 30, booking/communication 15; no price mentions found; 5 coaching actions each based on only 2 complaints out of 70 (weak evidence, labeled). No raw review text or author names stored. WhatsApp COACH only reads results cached for 24 h; fresh run = POST /api/public/coach-run with header x-digest-secret (~26 s). Nothing refreshes it on a schedule: run it before the demo. COACH / COACH MORE not yet tested on real WhatsApp; AI theme labels not hand-checked.
+- Remaining live tests: phone call, digest SMS + WhatsApp fallback, voice note for visitors, agent chat, FEEDBACK, MORE/LISTING demos, COACH.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
