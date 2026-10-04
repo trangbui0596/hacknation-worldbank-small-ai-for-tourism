@@ -14,7 +14,10 @@ Date: 2026-10-04. Code: `teranga-gambia/src/lib/match.ts`. Questions: `docs/data
 - **After the fix:** 0 out of 37. For questions Noor does have an answer for, right answers went from 32 to 40 out of 45
   and wrong-topic answers from 2 to 0.
 - **Read the "after" numbers with care.** The same 82 questions were used to find the problems, so they are better than
-  what to expect on new questions. A fresh set that nobody tuned on is the real test (see "Caveats").
+  what to expect on new questions.
+- **The real test is a fresh set nobody tuned on.** It was run once afterwards on 103 other real questions: 4 of 58
+  out-of-scope questions (7%) still got an answer, 0 of 45 in-scope questions got a wrong-topic answer, and 12 of 45 got
+  "Not sure" (see "Untuned check on a fresh set").
 
 ## What was tested and why
 
@@ -127,6 +130,31 @@ The numbers are stored in `teranga-gambia/src/lib/match-eval-results.ts` (`REAL_
 `src/test/real-questions-matcher.test.ts` fails if the matcher stops producing exactly these numbers, so any page text that
 quotes them must import them from there.
 
+## Untuned check on a fresh set
+
+After the matcher was finished, it was evaluated once on **103 other real questions from 14 other sites**, collected afterwards
+(`teranga-gambia/src/test/fixtures/gambia_tour_questions_holdout.json`; the numbers are stored as `HOLDOUT_RESULTS` in
+`src/lib/match-eval-results.ts`). No rule has been changed since these numbers were recorded (code formatting only). I have
+not read those questions or the individual results; the labels are the collector's judgment, as before.
+
+| | Questions | Right answer | Wrong answer | Not sure |
+|---|---|---|---|---|
+| In scope (Noor has an answer) | 45 | 33 (73%) | 0 | 12 (27%) |
+| Out of scope (no answer exists) | 58 | | **4 answered (7%)** | 54 Not sure (93%) |
+
+What this says:
+
+- The gap between the 82 questions we tuned on and the fresh set is the optimism described below: out-of-scope answers went
+  from 0 of 37 to 4 of 58, and in-scope "Not sure" from 11% to 27%. Why the 4 and the 12 happened has not been analysed yet;
+  the likely causes are words and phrasings the lists do not know.
+- The part of the promise that matters most mostly holds on questions nobody tuned on: 54 of 58 out-of-scope questions get
+  "Not sure", and no in-scope question got another topic's answer. The old matcher answered 46% of out-of-scope questions on the
+  82, but this report has no old-matcher number for the fresh set, so the two are not a like-for-like comparison.
+- 4 broken promises out of 58 is not zero. Those 4 (and the 12 misses) are what to study next. Fix them with general rules, then
+  test on yet another fresh set, because this one has now been used.
+- The test `untuned holdout` in `src/test/real-questions-matcher.test.ts` fails whenever the matcher stops scoring exactly these
+  numbers. After any rule change the numbers must be updated, and from then on this set is no longer untuned.
+
 ## Remaining failures on these 82 questions
 
 No out-of-scope question is answered and no in-scope question gets a wrong-topic answer. Five in-scope questions get
@@ -142,9 +170,10 @@ No out-of-scope question is answered and no in-scope question gets a wrong-topic
 
 ## Caveats
 
-1. **The "after" numbers are optimistic.** The rules and word lists were developed while looking at these 82 questions,
-   including the choice of which plain words to add. On new questions expect fewer right answers and some out-of-scope
-   answers. A fresh, separate question set is still to be evaluated and nobody should tune on it.
+1. **The "after" numbers on the 82 are optimistic.** The rules and word lists were developed while looking at these 82
+   questions, including the choice of which plain words to add. The fresh set confirms it: 4 of 58 out-of-scope questions were
+   answered and 27% of in-scope questions got "Not sure". Use the fresh-set numbers as the honest estimate, and expect them
+   to move a little with every new set.
 2. **The labels are one person's judgment.** Several are debatable (for example "Can I go on safari?" as *how to book*, "Is
    lunch included?" as *food*, "How much do things cost?" as *price*).
 3. **English only.** There are no real German or Dutch questions. German and Dutch behaviour is covered only by the older
@@ -175,7 +204,7 @@ fresh-set result.
 ## Where things are
 
 - Matcher and its rules: `teranga-gambia/src/lib/match.ts`
-- Scoring harness: `src/lib/match-eval.ts`; published numbers: `src/lib/match-eval-results.ts`
+- Scoring harness: `src/lib/match-eval.ts`; published numbers (82 questions and the fresh set): `src/lib/match-eval-results.ts`
 - Tests: `src/test/real-questions-matcher.test.ts` (the 82 questions) and `src/test/match-topics.test.ts` (the rules)
 - Run: `npx vitest run src/test/real-questions-matcher.test.ts src/test/match-topics.test.ts`
 
