@@ -144,6 +144,11 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Reference winner video on Drive cannot be opened from here (needs drive.google.com + *.googleusercontent.com allowed, or screenshots).
 - Still unverified live: REVIEW then LISTING; COMMUNITY PIN then ALERT; visitor sees notice; BILINGUAL.
 
+## Update 19: first measured translation check (2026-10-04)
+- Wolof to English on 54 FLEURS/FLORES sentences with the app's translator: chrF++ 47.6, BLEU 22.1 (details: `docs/eval/WOLOF_TRANSLATION_CHECK.md`). Indicative only.
+- Next: speech-recognition word error rate on real Wolof audio (FLEURS, Common Voice), NLLB-200 and MMS comparison, an operator word list, native-speaker review.
+- The digest secret was shown in a screenshot in chat: rotate `DIGEST_TRIGGER_SECRET` after filming.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
