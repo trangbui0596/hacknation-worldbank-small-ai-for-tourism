@@ -17,6 +17,20 @@ Persona: Noor, a FICTIONAL tour operator in The Gambia. Test audio is SYNTHETIC 
 - [ ] Do NOT type the word STOP in the WhatsApp sandbox: Twilio treats it as "leave the sandbox". Use DONE.
 - [ ] Reset the demo state if needed: send `EXIT` to leave any open round.
 
+## 0b. Message budget (when only about 20 sandbox messages are left)
+
+Counts are the messages the app SENDS (my estimate from the code; I do not know if Twilio also counts your inbound messages, so watch the counter on the "Try out WhatsApp" page after the first take). A visitor answer costs 2 when the voice note is ready (text, then voice).
+
+| Take | You send | App replies | About |
+|---|---|---|---|
+| 1. Call | (phone call) | WhatsApp summary of the call | 1 |
+| 2. Family helper (this is also the smoke test of the new layout) | `REVIEW <PIN>`, `REVIEW`, `1`, `1` | menu, review message, approval x2 | 5 |
+| 3. Visitor | `EXIT`, price question, kids question, unrelated question, `YES` | 1 + 2 + 2 + 1 + 1 | 7 |
+| 4. Coaching | `COACH` | Wolof coaching message | 1 to 2 |
+| Spare | `COACH EN`, German question | | 1 to 4 |
+
+Core total about 15 to 16. Skip the optional scenes (LISTING, MORE, digest). Record each take separately and cut them together. Do not retry a take in a loop. If a take fails, note the error code and use the fallback recording (section 7).
+
 ## 1. Scene: Noor records by phone call (about 40 seconds)
 
 1. Call the Twilio number from the demo phone (data and Wi-Fi off).
