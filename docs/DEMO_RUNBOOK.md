@@ -32,7 +32,7 @@ Counts are the messages the app SENDS (my estimate from the code; I do not know 
 | Take | You send | App replies | About |
 |---|---|---|---|
 | 1. Call | (phone call) | WhatsApp summary of the call | 1 |
-| 2. Household champion (this is also the smoke test of the new layout) | `REVIEW <PIN>`, `REVIEW`, `1`, `1` | menu, review message, approval x2 | 5 |
+| 2. Noor approves (this is also the smoke test of the new layout) | `REVIEW <PIN>`, `REVIEW`, `1`, `1` | menu, review message, approval x2 | 5 |
 | 3. Visitor | `EXIT`, price question, kids question, unrelated question, `YES` | 1 + 2 + 2 + 1 + 1 | 7 |
 | 4. Google listing | `REVIEW <PIN>`, `LISTING` | menu, listing pack, description to copy | 3 |
 | 5. One-tap review | `FEEDBACK`, your own voice note, `POST` | prompt, clean text + options, then 2 (text, link) | 4 |
@@ -52,13 +52,13 @@ Core total about 32 to 36. Skip the optional scenes (digest, referrals). Record 
 5. "Thank you. Your answers were saved. Goodbye."
 6. A summary arrives: "Teranga: Got 2 of 2 answers from your call..." It arrives on WhatsApp because US SMS needs carrier registration, which is submitted and in review. Say so.
 
-## 2. Scene: the household champion reviews (about 40 seconds)
+## 2. Scene: Noor approves her answers (about 40 seconds)
 
-Roles to say out loud: Noor records by phone call. Her household champion reviews by SMS. Visitors use WhatsApp. SMS needs no internet. US SMS registration is still in review, so in the demo the household champion's SMS replies arrive on WhatsApp with the line "SMS copy (shown here because US SMS registration is pending)".
+Roles to say out loud: Noor records by phone call and approves her own answers by SMS. Visitors use WhatsApp. SMS needs no internet. US SMS registration is still in review, so in the demo Noor's SMS replies arrive on WhatsApp with the line "SMS copy (shown here because US SMS registration is pending)".
 
-1. From the demo phone's Messages app (SMS) send `REVIEW <PIN>`. Expected: "Household champion: REVIEW = check answers (then 1 approve, 2 record again, 3 bilingual)...". (If SMS is still blocked this arrives on WhatsApp with the "SMS copy" line. Either is fine; say which.)
+1. From the demo phone's Messages app (SMS) send `REVIEW` (Noor's number needs no PIN). Expected: "REVIEW = check answers (then 1 approve, 2 record again, 3 bilingual)...". (If SMS is still blocked this arrives on WhatsApp with the "SMS copy" line. Either is fine; say which.)
 2. Send `REVIEW`. Expected: one compact text: "1/N Njekk", the Wolof transcript in quotes, "Limu: ... (about 1500) + dalasi", and "1 Nangu, 2 Waxaat ko, 3 Nit ku xam ñaar yi làkk".
-3. Say: "The household champion does not need English: she sees the Wolof transcript and the numbers, and confirms with one digit."
+3. Say: "Noor does not need English: she sees the Wolof transcript and the numbers, and confirms with one digit."
 4. Reply `1` to approve the price answer. The confirmation comes as one text and the next answer as another. Voice files for English, German and Dutch are created in the background (about 10 seconds). Reply `1` again for the next answer.
 5. If an approval says "Still processing", send REVIEW again in a minute.
 6. The same commands work on WhatsApp (richer formatting) if you prefer to film there.
@@ -75,8 +75,8 @@ Roles to say out loud: Noor records by phone call. Her household champion review
 ## 4. Scene: the Google listing (about 25 seconds)
 
 1. In household-champion mode (by SMS or WhatsApp: `REVIEW <PIN>`), send `LISTING`.
-2. Expected: a Wolof-first message: answers approved (x of 10), listing fields ready (y of 10), a ✅ / 📝 / ❌ list of the fields, which question cards to record next, what only the household champion can add (name, hours, phone, photos), five short steps to claim the profile, then the description alone as a second message (press and hold to copy).
-3. Say: "Built only from answers the household champion approved. It never invents a phone number or opening hours: those say 'needs input'. It sends nothing to Google. A person claims the profile at business.google.com and pastes it."
+2. Expected: a Wolof-first message: answers approved (x of 10), listing fields ready (y of 10), a ✅ / 📝 / ❌ list of the fields, which question cards to record next, what only Noor or her household champion can add (name, hours, phone, photos), five short steps to claim the profile, then the description alone as a second message (press and hold to copy).
+3. Say: "Built only from answers Noor approved. It never invents a phone number or opening hours: those say 'needs input'. It sends nothing to Google. A person claims the profile at business.google.com and pastes it."
 
 ## 5. Scene: one-tap Google review, in the visitor's own words (about 25 seconds)
 
