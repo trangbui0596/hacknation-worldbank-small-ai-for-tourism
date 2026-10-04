@@ -41,3 +41,13 @@ The narration for this clip is `05_listing.mp3`.
 
 ## 5. The reference video
 I cannot open large videos from Drive (the connector only reads documents and images). Either allow the Drive domains above and share the link again, or send me 8 to 10 screenshots from it plus a sentence on what you like (pace, graphics, voice). I will match the structure and tell you exactly what to change.
+
+## What the reference winner video does (measured from the 60 s file)
+
+- Length 60 s, 1080p 30 fps. Loudness -14.7 LUFS (typical for online video); voice and music both present, no sudden volume jumps (loudness range 4.4 LU).
+- Structure: on-camera presenter in a real setting with a "THE PROBLEM" label (0 to 6 s) -> 3D/AI cinematic shots of the problem (6 to 21 s) -> presenter again: "let's jump into the demo" (21 to 23 s) -> screen recording of the product (23 to 56 s) -> one calm closing shot with the tagline (56 to 60 s).
+- Screen recordings are zoomed in, shown in a rounded window on a dark gradient background, with a slow cursor.
+- One short caption at a time, bottom centre, with the key word colored. About 10 captions in 60 s.
+- One idea per shot; a cut about every 2 to 5 s in the intro, 5 to 10 s in the demo.
+
+How we match it: dark-gradient frame with rounded phone/laptop recordings, one-line colored-keyword captions, a gentle music bed under the voice at about -14 LUFS, a short problem opening, and a quiet closing card. The recordings and narration we already have fit this; the assembly script is what changes.
