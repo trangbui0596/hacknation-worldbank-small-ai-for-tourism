@@ -23,7 +23,7 @@ Record each scene as its own short clip, with no talking. Add your voice afterwa
 |---|---|---|---|
 | 0 | Problem and idea | The numbers on the live page, then the "Works offline" and "AI beyond SMS" tabs | Laptop screen recording: Mac `Cmd+Shift+5`, Windows `Win+Alt+R` (Game Bar) or the free OBS app. Scroll slowly. |
 | 1 | The call | You calling the Twilio number from the demo phone (Wi-Fi and mobile data OFF, signal ON), the clip playing from the laptop speaker | Phone screen recorders usually do not capture call audio. Film the phone with a second device (another phone or the laptop webcam) leaning on a book stack. Show the call screen and the laptop playing the clip. Then turn data back ON; the "Got 2 of 2 answers" WhatsApp message arrives; screen-record that. |
-| 2 | Household helper | WhatsApp: `REVIEW <PIN>`, `REVIEW`, `1`, `1` | Phone screen recording (iPhone: Control Center, record button; Android: Quick Settings, Screen record). |
+| 2 | Household champion | WhatsApp: `REVIEW <PIN>`, `REVIEW`, `1`, `1` | Phone screen recording (iPhone: Control Center, record button; Android: Quick Settings, Screen record). |
 | 3 | Visitor | `EXIT`, then the questions in the runbook, including the one it should NOT know | Phone screen recording. Play the voice note on screen once so viewers see the "AI-generated voice" label. |
 | 4 | Google listing | `REVIEW <PIN>`, `LISTING`; long-press the description to show it can be copied | Phone screen recording. |
 | 5 | One-tap review | `FEEDBACK`, your own English voice note, `POST`, then tap the link and paste (do not post) | Phone screen recording. |

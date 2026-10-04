@@ -8,7 +8,7 @@ Teranga is built around people. Every operator has a **household champion**, and
 |---|---|---|
 | Who | A family member of one operator | One trusted person for a circle: an association, a village, a guides' group |
 | Needs | A smartphone, online about once a week | A smartphone with WhatsApp |
-| Does | Reviews that operator's answers: sees the Wolof transcript and the numbers the AI heard, then approves, asks for a re-record, or sends the answer to a bilingual reviewer | Posts community notices, checks translations that household helpers could not, passes on referral requests |
+| Does | Reviews that operator's answers: sees the Wolof transcript and the numbers the AI heard, then approves, asks for a re-record, or sends the answer to a bilingual reviewer | Posts community notices, checks translations that household champions could not, passes on referral requests |
 | In the demo | `REVIEW <PIN>` | `COMMUNITY <PIN>` (same demo PIN; a real deployment would use real sign-in) |
 
 ## Why a community role
@@ -25,7 +25,7 @@ Operators share the same roads, rivers and rainy season, so some jobs are too bi
 - Every notice says it is a community notice, not an official warning, and that Noor will confirm the tour. Teranga does not replace official warnings.
 
 **2. Check translations** (`BILINGUAL`).
-When a household helper is not sure a translation is right (option 3 in her review), the answer waits in the community queue. The community champion sees the Wolof transcript, the English, and the numbers the AI heard, and replies 1 (English is right), 2 (record again) or 3 (leave it). When approved, visitors see "English checked by a bilingual reviewer". German and Dutch stay machine translations of that English, and the label says so.
+When a household champion is not sure a translation is right (option 3 in her review), the answer waits in the community queue. The community champion sees the Wolof transcript, the English, and the numbers the AI heard, and replies 1 (English is right), 2 (record again) or 3 (leave it). When approved, visitors see "English checked by a bilingual reviewer". German and Dutch stay machine translations of that English, and the label says so.
 
 **3. Pass on referrals** (`LEDGER`).
 Visitors can ask for a suggestion for another tour. Suggestions rotate fairly between partner operators, no money changes hands, the visitor's number is never shared, and contact requests wait for the community champion. The partners in the demo are fictional.

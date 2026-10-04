@@ -15,7 +15,7 @@ Persona: Noor, a FICTIONAL tour operator in The Gambia. Test audio is SYNTHETIC 
 - [ ] Optional secret `GOOGLE_REVIEW_URL`: the link everyone gets for the review. Without it the message says "[review link not set yet, Simulated]", which is honest but looks unfinished. Use the real Google review link of a place you own or run; never a real business you do not own, and never post a fake review.
 - [ ] Optional, only for the "Noor texts COACH" scene: Twilio Console, Phone Numbers, your number, Messaging, "A message comes in" = `https://teranga-gambia.lovable.app/api/public/sms-webhook`, HTTP POST. Without it the scene still works from the WhatsApp side.
 - [ ] Optional secrets: `SMS_RECEIPTS=off` stops approval receipts to Noor's phone; `SMS_VISITOR_MODE=on` lets visitors use text-only SMS (leave it off for the video).
-- [ ] For the translation check (scene 6): one answer must be waiting for a bilingual reviewer. One already is in the database from earlier tests. To make another, in helper mode review an answer and reply `3`.
+- [ ] For the translation check (scene 6): one answer must be waiting for a bilingual reviewer. One already is in the database from earlier tests. To make another, in household-champion mode review an answer and reply `3`.
 - [ ] Put the two clips on the laptop: `SYNTHETIC_q01_price.mp3` and `SYNTHETIC_q05_children.mp3` (folder `docs/test_audio/` in the repo).
 - [ ] Phone: Wi-Fi and mobile data OFF for the call scene (a feature phone has no data). Voice signal ON.
 - [ ] Do NOT type the word STOP in the WhatsApp sandbox: Twilio treats it as "leave the sandbox". Use DONE.
@@ -32,7 +32,7 @@ Counts are the messages the app SENDS (my estimate from the code; I do not know 
 | Take | You send | App replies | About |
 |---|---|---|---|
 | 1. Call | (phone call) | WhatsApp summary of the call | 1 |
-| 2. Family helper (this is also the smoke test of the new layout) | `REVIEW <PIN>`, `REVIEW`, `1`, `1` | menu, review message, approval x2 | 5 |
+| 2. Household champion (this is also the smoke test of the new layout) | `REVIEW <PIN>`, `REVIEW`, `1`, `1` | menu, review message, approval x2 | 5 |
 | 3. Visitor | `EXIT`, price question, kids question, unrelated question, `YES` | 1 + 2 + 2 + 1 + 1 | 7 |
 | 4. Google listing | `REVIEW <PIN>`, `LISTING` | menu, listing pack, description to copy | 3 |
 | 5. One-tap review | `FEEDBACK`, your own voice note, `POST` | prompt, clean text + options, then 2 (text, link) | 4 |
@@ -52,13 +52,13 @@ Core total about 32 to 36. Skip the optional scenes (digest, referrals). Record 
 5. "Thank you. Your answers were saved. Goodbye."
 6. A summary arrives: "Teranga: Got 2 of 2 answers from your call..." It arrives on WhatsApp because US SMS needs carrier registration, which is submitted and in review. Say so.
 
-## 2. Scene: the household helper reviews (about 40 seconds)
+## 2. Scene: the household champion reviews (about 40 seconds)
 
-Roles to say out loud: Noor records by phone call. Her helper reviews by SMS. Visitors use WhatsApp. SMS needs no internet. US SMS registration is still in review, so in the demo the helper's SMS replies arrive on WhatsApp with the line "SMS copy (shown here because US SMS registration is pending)".
+Roles to say out loud: Noor records by phone call. Her household champion reviews by SMS. Visitors use WhatsApp. SMS needs no internet. US SMS registration is still in review, so in the demo the household champion's SMS replies arrive on WhatsApp with the line "SMS copy (shown here because US SMS registration is pending)".
 
-1. From the demo phone's Messages app (SMS) send `REVIEW <PIN>`. Expected: "Helper: REVIEW = check answers (then 1 approve, 2 record again, 3 bilingual)...". (If SMS is still blocked this arrives on WhatsApp with the "SMS copy" line. Either is fine; say which.)
+1. From the demo phone's Messages app (SMS) send `REVIEW <PIN>`. Expected: "Household champion: REVIEW = check answers (then 1 approve, 2 record again, 3 bilingual)...". (If SMS is still blocked this arrives on WhatsApp with the "SMS copy" line. Either is fine; say which.)
 2. Send `REVIEW`. Expected: one compact text: "1/N Njekk", the Wolof transcript in quotes, "Limu: ... (about 1500) + dalasi", and "1 Nangu, 2 Waxaat ko, 3 Nit ku xam ñaar yi làkk".
-3. Say: "The helper does not need English: she sees the Wolof transcript and the numbers, and confirms with one digit."
+3. Say: "The household champion does not need English: she sees the Wolof transcript and the numbers, and confirms with one digit."
 4. Reply `1` to approve the price answer. The confirmation comes as one text and the next answer as another. Voice files for English, German and Dutch are created in the background (about 10 seconds). Reply `1` again for the next answer.
 5. If an approval says "Still processing", send REVIEW again in a minute.
 6. The same commands work on WhatsApp (richer formatting) if you prefer to film there.
@@ -74,9 +74,9 @@ Roles to say out loud: Noor records by phone call. Her helper reviews by SMS. Vi
 
 ## 4. Scene: the Google listing (about 25 seconds)
 
-1. In helper mode (by SMS or WhatsApp: `REVIEW <PIN>`), send `LISTING`.
-2. Expected: a Wolof-first message: answers approved (x of 10), listing fields ready (y of 10), a ✅ / 📝 / ❌ list of the fields, which question cards to record next, what only the helper can add (name, hours, phone, photos), five short steps to claim the profile, then the description alone as a second message (press and hold to copy).
-3. Say: "Built only from answers the helper approved. It never invents a phone number or opening hours: those say 'needs input'. It sends nothing to Google. A person claims the profile at business.google.com and pastes it."
+1. In household-champion mode (by SMS or WhatsApp: `REVIEW <PIN>`), send `LISTING`.
+2. Expected: a Wolof-first message: answers approved (x of 10), listing fields ready (y of 10), a ✅ / 📝 / ❌ list of the fields, which question cards to record next, what only the household champion can add (name, hours, phone, photos), five short steps to claim the profile, then the description alone as a second message (press and hold to copy).
+3. Say: "Built only from answers the household champion approved. It never invents a phone number or opening hours: those say 'needs input'. It sends nothing to Google. A person claims the profile at business.google.com and pastes it."
 
 ## 5. Scene: one-tap Google review, in the visitor's own words (about 25 seconds)
 
@@ -98,7 +98,7 @@ Say first: "Every operator has a household champion. A community has one too."
 1. Send `COMMUNITY <PIN>`. Expected: the "Mbootaay" menu: ALERT, ALERTS, BILINGUAL, PULSE, LEDGER.
 2. Send `ALERT 2 Tendaba road`. Expected: "Notice posted: Road closed or flooded · Tendaba road", the SMS line (sent, or "not delivered: US carrier registration pending"), "Visitors see it under every answer (24 h)", and that N simulated members were not messaged. Say: "The wording is fixed in four languages, so nothing is machine-translated in an emergency, and it always says it is not an official warning."
 3. Send `EXIT`, then ask `Where do we meet?`. Expected: the answer and under it "⚠️ Community notice (just now): Road closed or flooded: Tendaba road" with the disclaimer. Send `DE`, ask again: the notice is in German. (`STATUS` also shows the notice.)
-4. Send `COMMUNITY <PIN>`, then `BILINGUAL`. Expected: a Translation check card with the Wolof transcript, the English, the numbers heard, and 1 / 2 / 3. Reply `1`. Expected: "approved, and marked as checked by a bilingual reviewer". Say: "When the household helper is not sure, a bilingual person in the community checks. Visitors then see 'English checked by a bilingual reviewer'. German and Dutch stay machine translations of that English."
+4. Send `COMMUNITY <PIN>`, then `BILINGUAL`. Expected: a Translation check card with the Wolof transcript, the English, the numbers heard, and 1 / 2 / 3. Reply `1`. Expected: "approved, and marked as checked by a bilingual reviewer". Say: "When the household champion is not sure, a bilingual person in the community checks. Visitors then see 'English checked by a bilingual reviewer'. German and Dutch stay machine translations of that English."
 5. Send `ALERT 6` to clear the notice.
 6. Optional: `MORE`, `1 YES`, `CONNECT` (fair referrals between fictional partner operators, SIMULATED), then in the community menu `LEDGER` shows the contact request waiting. Say: "No money, no number shared, and a person passes on the contact."
 
@@ -117,8 +117,8 @@ Say first: "Every operator has a household champion. A community has one too."
 
 ## 9. Optional scenes (only if time allows and they were tested)
 
-- Weekly sync: in helper mode send `SYNC` (report on WhatsApp plus an SMS copy to Noor). The full scheduled version is `POST /api/public/weekly-sync` with the digest secret: it re-scans public reviews first (takes about 30 seconds).
-- Weekly digest: trigger with the digest secret; Noor gets it by SMS in Wolof (counts only), the helper's WhatsApp fallback has the full text.
+- Weekly sync: in household-champion mode send `SYNC` (report on WhatsApp plus an SMS copy to Noor). The full scheduled version is `POST /api/public/weekly-sync` with the digest secret: it re-scans public reviews first (takes about 30 seconds).
+- Weekly digest: trigger with the digest secret; Noor gets it by SMS in Wolof (counts only), the household champion's WhatsApp fallback has the full text.
 
 ## 10. What to say about limits (honest, required)
 
