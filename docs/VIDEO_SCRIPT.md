@@ -32,9 +32,9 @@ Not sourced (do not state as fact): language barriers, share of operators with a
 
 **0:40 Scene 1, the call (30 s).** Runbook scene 1. "A simple phone call. Speech recognition turns her Wolof into text." Say that the clips are synthetic and the summary arrives on WhatsApp because SMS registration is in review.
 
-**1:10 Scene 2, the household helper (40 s).** Runbook scene 2. "A family member reviews on WhatsApp. She sees Wolof, not English: the transcript and the numbers the AI heard, here about 1500 dalasi, so she can confirm a price without reading English. She approves. Nothing reaches a visitor without her approval."
+**1:10 Scene 2, the household helper (40 s).** Runbook scene 2. State the roles first: "Noor records by phone call, her helper reviews by SMS, visitors use WhatsApp." "A family member reviews by text. She sees Wolof, not English: the transcript and the numbers the AI heard, here about 1500 dalasi, so she can confirm a price without reading English. She approves. Nothing reaches a visitor without her approval."
 
-**1:50 Scene 3, the visitor (35 s).** Runbook scene 3. "A visitor asks in English or German and gets the approved answer as text and an AI voice, labeled machine-translated. If it is not sure, it says Noor will answer. Matching is plain rules, on purpose, and we tested it on real questions from Gambian operators' FAQ pages. [Quote the measured numbers from the What's real tab.]"
+**1:50 Scene 3, the visitor (35 s).** Runbook scene 3. "A tourist sends a voice note in English or German; speech recognition hears the language and the question, and she gets the approved answer as text and an AI voice, labeled machine-translated. If it is not sure, it says Noor will answer. Matching is plain rules, on purpose, and we tested it on real questions from Gambian operators' FAQ pages. [Quote the measured numbers from the What's real tab.]"
 
 **2:25 Scene 4, the Google listing (20 s).** Runbook scene 4. "From her approved answers Teranga builds a Google listing draft: description, services, meeting point, how to book. It shows what is missing and which question to record next. It never invents a phone number or hours, and it sends nothing to Google: a person publishes it."
 

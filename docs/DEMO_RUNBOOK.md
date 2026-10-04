@@ -48,26 +48,29 @@ Core total about 32 to 36. Skip the optional scenes (digest, referrals). Record 
 5. "Thank you. Your answers were saved. Goodbye."
 6. A summary arrives: "Teranga: Got 2 of 2 answers from your call..." It arrives on WhatsApp because US SMS needs carrier registration, which is submitted and in review. Say so.
 
-## 2. Scene: the family helper reviews on WhatsApp (about 60 seconds)
+## 2. Scene: the household helper reviews (about 40 seconds)
 
-1. Send `REVIEW <PIN>`. Expected: champion menu, Wolof first, English below.
-2. Send `REVIEW`. Expected for each answer: Wolof transcript (unverified), "Numbers heard" (for price: about 1500 + dalasi), flags, reply options 1/2/3.
-3. Say: "The helper does not need English: she sees the Wolof transcript and the numbers, and confirms."
-4. Reply `1` to approve the price answer. Voice files for English, German and Dutch are created (about 10 seconds). Reply `1` again for the children answer.
+Roles to say out loud: Noor records by phone call. Her helper reviews by SMS. Visitors use WhatsApp. SMS needs no internet. US SMS registration is still in review, so in the demo the helper's SMS replies arrive on WhatsApp with the line "SMS copy (shown here because US SMS registration is pending)".
+
+1. From the demo phone's Messages app (SMS) send `REVIEW <PIN>`. Expected: "Helper: REVIEW = check answers (then 1 approve, 2 record again, 3 bilingual)...". (If SMS is still blocked this arrives on WhatsApp with the "SMS copy" line. Either is fine; say which.)
+2. Send `REVIEW`. Expected: one compact text: "1/N Njekk", the Wolof transcript in quotes, "Limu: ... (about 1500) + dalasi", and "1 Nangu, 2 Waxaat ko, 3 Nit ku xam ñaar yi làkk".
+3. Say: "The helper does not need English: she sees the Wolof transcript and the numbers, and confirms with one digit."
+4. Reply `1` to approve the price answer. The confirmation comes as one text and the next answer as another. Voice files for English, German and Dutch are created in the background (about 10 seconds). Reply `1` again for the next answer.
 5. If an approval says "Still processing", send REVIEW again in a minute.
+6. The same commands work on WhatsApp (richer formatting) if you prefer to film there.
 
 ## 3. Scene: a visitor asks, in their language (about 50 seconds)
 
-1. Send `EXIT` to switch to visitor mode.
-2. Ask `How much does it cost?` Expected: the approved answer, labeled "Machine-translated", and a voice note labeled "AI-generated voice".
-3. Send `DE`, then `Wie viel kostet die Tour?` Expected: German answer (and voice note if ready).
-4. Ask `Can we bring our kids?` Expected: the children answer.
-5. Ask something unrelated, for example `Do you offer night tours?` Expected: "Not sure, Noor will answer." Say: "It never guesses."
+1. On WhatsApp send `EXIT` to switch to visitor mode (or use a second phone as the visitor).
+2. Ask by VOICE NOTE: record "How much does the tour cost?" in English. Expected: "🎙️ “How much does the tour cost?”" (what it heard), the approved answer labeled "Machine-translated", and an AI voice note. Say: "Speech recognition hears the tourist and detects the language; the answer comes back in that language as text and voice."
+3. Record a German voice note: "Wie viel kostet die Tour?" Expected: German heard text and German answer (and voice note if ready).
+4. Ask by text `Can we bring our kids?` Expected: the children answer.
+5. Ask something unrelated, for example `Do you offer night tours?` Expected: "Not sure, Noor will answer." Say: "When it is not sure, it says so. We tested this on real questions from Gambian operators; see the What's real tab for the measured numbers."
 6. Reply `YES` to "Was this clear?". Say: "The review link is the same for everyone. No review gating."
 
 ## 4. Scene: the Google listing (about 25 seconds)
 
-1. In helper mode (`REVIEW <PIN>`), send `LISTING`.
+1. In helper mode (by SMS or WhatsApp: `REVIEW <PIN>`), send `LISTING`.
 2. Expected: a Wolof-first message: answers approved (x of 10), listing fields ready (y of 10), a ✅ / 📝 / ❌ list of the fields, which question cards to record next, what only the helper can add (name, hours, phone, photos), five short steps to claim the profile, then the description alone as a second message (press and hold to copy).
 3. Say: "Built only from answers the helper approved. It never invents a phone number or opening hours: those say 'needs input'. It sends nothing to Google. A person claims the profile at business.google.com and pastes it."
 
