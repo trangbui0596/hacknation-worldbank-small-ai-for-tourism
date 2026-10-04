@@ -32,6 +32,8 @@ Not sourced (do not state as fact): language barriers, share of operators with a
 
 **0:40 Scene 1, the call (30 s).** Runbook scene 1. "A simple phone call. Speech recognition turns her Wolof into text." Say that the clips are synthetic and the summary arrives on WhatsApp because SMS registration is in review.
 
+**Say this once, early (scene 2), word for word:** "Everything for Noor, her helper and the community champion is built for SMS, so it works with no internet. US carrier registration for SMS is still in review, so in this demo we run the same commands on WhatsApp, which mirrors them. Tourists use WhatsApp for real, because they have data and it carries voice."
+
 **1:10 Scene 2, the household helper (40 s).** Runbook scene 2. State the roles first: "Noor records by phone call, her helper reviews by SMS, visitors use WhatsApp." "A family member reviews by text. She sees Wolof, not English: the transcript and the numbers the AI heard, here about 1500 dalasi, so she can confirm a price without reading English. She approves. Nothing reaches a visitor without her approval."
 
 **1:50 Scene 3, the visitor (35 s).** Runbook scene 3. "A tourist sends a voice note in English or German; speech recognition hears the language and the question, and she gets the approved answer as text and an AI voice, labeled machine-translated. If it is not sure, it says Noor will answer. Matching is plain rules, on purpose, and we tested it on real questions from Gambian operators' FAQ pages. [Quote the measured numbers from the What's real tab.]"

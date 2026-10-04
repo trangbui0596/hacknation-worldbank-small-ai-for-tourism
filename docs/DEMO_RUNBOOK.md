@@ -21,6 +21,10 @@ Persona: Noor, a FICTIONAL tour operator in The Gambia. Test audio is SYNTHETIC 
 - [ ] Do NOT type the word STOP in the WhatsApp sandbox: Twilio treats it as "leave the sandbox". Use DONE.
 - [ ] Reset the demo state if needed: send `EXIT` to leave any open round.
 
+## Filming decision: all scenes on WhatsApp
+
+Live SMS is blocked (carrier registration in review; your carrier also blocked the test text). Film scenes 2, 6 and 7 on WhatsApp using the same commands and say the line in the video script ("WhatsApp mirrors the SMS commands"). For scene 7 show the Try SMS tab on the live page as a labeled simulation. Skip the Twilio SMS webhook setup.
+
 ## 0b. Message budget (when only about 20 sandbox messages are left)
 
 Counts are the messages the app SENDS (my estimate from the code; I do not know if Twilio also counts your inbound messages, so watch the counter on the "Try out WhatsApp" page after the first take). A visitor answer costs 2 when the voice note is ready (text, then voice).
