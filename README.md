@@ -20,6 +20,8 @@ between neighbours, and texts Noor weekly coaching in Wolof. Noor never needs th
 | `docs/FILMING_GUIDE.md`, `docs/VIDEO_PRODUCTION.md` | How the demo video is filmed and assembled |
 | `docs/COMMUNITY_CHAMPION_GUIDE.md` | The household and community champion roles, notices, referrals |
 | `docs/data/` | Real visitor questions from public FAQ pages, prices and exchange-rate notes |
+| `docs/DATA_INSIGHTS.md` | What the World Bank figures told us, which design decisions they support, and what they did not show |
+| `docs/eval/WOLOF_TRANSLATION_CHECK.md` | Wolof to English check on 54 open FLEURS/FLORES sentences (chrF++ 47.6) |
 | `docs/eval/REAL_QUESTIONS_MATCHER.md` | How the question matcher was tested (82 for tuning, 103 untuned held-out) |
 | `docs/test_audio/` | Ten synthetic Wolof test clips (text-to-speech, not a native speaker) |
 | `docs/video_assets/` | Narration, cards and the assembly script for the demo video |
