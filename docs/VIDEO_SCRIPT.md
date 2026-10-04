@@ -22,7 +22,7 @@ Not sourced (do not state as fact): language barriers, share of operators with a
 
 ## Required one-liner (use this wording on screen and aloud)
 
-"Because of this tool, a Gambian tour operator will be able to answer visitors in English, German and Dutch with her own pre-approved words instead of missing enquiries she cannot read or reply to. The need: only 49.5% of people in The Gambia used the Internet in 2024, while tourism brought in 43.6% of exports in 2019, the last year before COVID. This is the gap we target, not a measured result."
+"Because of this tool, a Gambian tour operator will answer visitors in English, German and Dutch with her own pre-approved words within a week of one phone call, backed by a household champion and a community champion and keeping her coaching, Google listing progress and community notices as plain SMS, work she would otherwise miss, answer late or answer badly because she cannot read or reply to online enquiries; we know because the World Bank figures above show how much tourism earns and how many Gambians are still offline. This is the gap we target, not a measured result."
 
 ## Script (full cut about 4 minutes 50 seconds; limit 5:00)
 
