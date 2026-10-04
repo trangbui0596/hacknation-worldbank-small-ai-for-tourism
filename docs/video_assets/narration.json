@@ -1,52 +1,52 @@
 [
- {
-  "scene": "00_problem",
-  "seconds": 21.2,
-  "text": "Meet Noor, a fictional tourism operator in The Gambia. Tourism earned the country one hundred fifty seven million US dollars in twenty nineteen, and about half of Gambians are still not online. Tourists write in English, German and Dutch. Noor speaks Wolof on a basic phone. Every enquiry she can't read is a booking she can't win."
- },
- {
-  "scene": "01_idea",
-  "seconds": 15.4,
-  "text": "This is Teranga, Wolof for hospitality. Noor never needs the internet. She records her answers by phone call and approves them by text message. An AI hears her Wolof, translates it, and speaks it back to tourists in their own language."
- },
- {
-  "scene": "02_call",
-  "seconds": 9.6,
-  "text": "Noor calls from a basic phone, with mobile data switched off. The AI hears her Wolof answers. The audio in this demo is synthetic, and we say so."
- },
- {
-  "scene": "03_review",
-  "seconds": 21.0,
-  "text": "Noor approves each answer by text. She sees the Wolof transcript and the numbers the AI heard, here about fifteen hundred dalasi. One digit approves it. Everything for Noor and her household champion works over SMS. US carrier registration is still in review, so in this demo WhatsApp mirrors the same commands."
- },
- {
-  "scene": "04_tourist",
-  "seconds": 17.1,
-  "text": "A tourist sends a voice note in English or German. Speech recognition hears the language and the question, and the answer comes back in that language, as text and an AI voice. If Noor has no answer yet, it says so, and offers to message the tourist when she does."
- },
- {
-  "scene": "05_listing",
-  "seconds": 19.2,
-  "text": "From her approved answers, Teranga builds a Google listing draft: a description inside Google's limit, what is missing, which question to record next, and a WhatsApp link so tourists can ask. It never invents a phone number or opening hours. A person publishes it. Nothing is sent to Google."
- },
- {
-  "scene": "06_review",
-  "seconds": 13.0,
-  "text": "After the tour, the tourist speaks a review. Teranga writes it as clean text, changing no facts and no feeling. They copy it into Google and choose their own stars. We never post for them, and there is no review gating."
- },
- {
-  "scene": "07_community",
-  "seconds": 21.3,
-  "text": "Every operator has a household champion, and a community has one too. When a road floods, the community champion sends one notice. Members get an S M S in Wolof, and every tourist answer carries it in their language. The wording is fixed, so nothing is machine translated in an emergency, and it always says it is not an official warning."
- },
- {
-  "scene": "08_coaching",
-  "seconds": 8.6,
-  "text": "Every week, the sync re-reads public Google reviews and what tourists asked, and sends Noor plain coaching in Wolof, by text message."
- },
- {
-  "scene": "09_limits",
-  "seconds": 33.0,
-  "text": "What is real: the call, the transcription, the approvals, the tourist answers and the voice are live. What is not: the Wolof audio is synthetic, the Wolof wording is unverified by a native speaker, S M S delivery waits for registration, and the partner operators are simulated. Next: a native Wolof speaker, real partner operators, and real community champions. A Gambian tourism operator can now answer tourists in their own language, in her own approved words. Thank you."
- }
+  {
+    "scene": "00_problem",
+    "seconds": 23.8,
+    "text": "Meet Noor, a fictional tourism operator in The Gambia. Tourism earned the country one hundred fifty seven million US dollars in twenty nineteen, and about half of Gambians are still not online. Tourists write in English, German and Dutch. Noor speaks Wolof on a basic phone. Every enquiry she can't read is a booking she can't win."
+  },
+  {
+    "scene": "01_idea",
+    "seconds": 15.4,
+    "text": "This is Teranga, Wolof for hospitality. Noor never needs the internet. She records her answers by phone call and approves them by text message. An AI hears her Wolof, translates it, and speaks it back to tourists in their own language."
+  },
+  {
+    "scene": "02_call",
+    "seconds": 9.6,
+    "text": "Noor calls from a basic phone, with mobile data switched off. The AI hears her Wolof answers. The audio in this demo is synthetic, and we say so."
+  },
+  {
+    "scene": "03_review",
+    "seconds": 21.0,
+    "text": "Noor approves each answer by text. She sees the Wolof transcript and the numbers the AI heard, here about fifteen hundred dalasi. One digit approves it. Everything for Noor and her household champion works over SMS. US carrier registration is still in review, so in this demo WhatsApp mirrors the same commands."
+  },
+  {
+    "scene": "04_tourist",
+    "seconds": 17.1,
+    "text": "A tourist sends a voice note in English or German. Speech recognition hears the language and the question, and the answer comes back in that language, as text and an AI voice. If Noor has no answer yet, it says so, and offers to message the tourist when she does."
+  },
+  {
+    "scene": "05_listing",
+    "seconds": 19.2,
+    "text": "From her approved answers, Teranga builds a Google listing draft: a description inside Google's limit, what is missing, which question to record next, and a WhatsApp link so tourists can ask. It never invents a phone number or opening hours. A person publishes it. Nothing is sent to Google."
+  },
+  {
+    "scene": "06_review",
+    "seconds": 13.0,
+    "text": "After the tour, the tourist speaks a review. Teranga writes it as clean text, changing no facts and no feeling. They copy it into Google and choose their own stars. We never post for them, and there is no review gating."
+  },
+  {
+    "scene": "07_community",
+    "seconds": 21.3,
+    "text": "Every operator has a household champion, and a community has one too. When a road floods, the community champion sends one notice. Members get an S M S in Wolof, and every tourist answer carries it in their language. The wording is fixed, so nothing is machine translated in an emergency, and it always says it is not an official warning."
+  },
+  {
+    "scene": "08_coaching",
+    "seconds": 8.6,
+    "text": "Every week, the sync re-reads public Google reviews and what tourists asked, and sends Noor plain coaching in Wolof, by text message."
+  },
+  {
+    "scene": "09_limits",
+    "seconds": 36.1,
+    "text": "What is real: the call, the transcription, the approvals, the tourist answers and the voice are live. What is not: the Wolof audio is synthetic, the Wolof wording is unverified by a native speaker, S M S delivery waits for registration, and the partner operators are simulated. Next: a native Wolof speaker, real partner operators, and real community champions. A Gambian tourism operator can now answer tourists in their own language, in her own approved words. Thank you."
+  }
 ]

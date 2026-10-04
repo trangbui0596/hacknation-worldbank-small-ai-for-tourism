@@ -13,7 +13,7 @@
 ## 2. The 9 clips (silent screen recordings, in this order, saved as `00_problem.mp4` ... `09_limits.mp4`)
 | File | Narration length | Record this |
 |---|---|---|
-| `00_problem` | 21 s | Laptop: the live page top (https://teranga-gambia.lovable.app), slow scroll over the six number tiles |
+| `00_problem` | 24 s | Laptop: the live page top (https://teranga-gambia.lovable.app), slow scroll over the six number tiles |
 | `01_idea` | 15 s | Laptop: the How it works tab, slow pan over the five-step flow |
 | `02_call` | 10 s | Second phone filming the demo phone (data and Wi-Fi OFF) dialing the Twilio number; laptop speaker plays `SYNTHETIC_q01_price.mp3` |
 | `03_review` | 21 s | Phone screen recording: `REVIEW`, the review card, `1` (WhatsApp mirrors the SMS commands) |
