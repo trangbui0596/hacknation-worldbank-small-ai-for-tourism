@@ -62,11 +62,16 @@ Core total about 22 to 24. Skip the optional scenes (LISTING, digest). Record ea
 
 ## 4. Scene: one-tap Google review, in the visitor's own words (about 25 seconds)
 
+What is real: the voice note, the speech-to-text, the clean-up and the link message are all live. What stays with the visitor: pasting and pressing "Post" on Google. Teranga never posts a review for anyone, and Google does not let a page pre-fill review text, so the visitor pastes it.
+
+One-time setup (3 minutes): in Google Maps, open the place whose review box you want to show, tap "Write a review" (or "Reviews", then "Write a review"), copy the page address, and save it as the Lovable secret `GOOGLE_REVIEW_URL`. In real use this is Noor's own Google review link. For the video you may use any public place; say out loud that it stands in for Noor's link.
+
 1. Still in visitor mode, send `FEEDBACK`. Expected: a prompt saying nothing is posted for you and the review is yours.
-2. Record a WhatsApp voice note in English about a pretend tour (10 to 15 seconds). It is your own voice playing a visitor. Do not invent a real business or a real person.
-3. Expected: your words as clean text (no facts or feelings changed) plus the options POST / EDIT / NO.
-4. Send `POST`. Expected: two messages. The text alone (press and hold to copy), then "To post it: tap the link, paste..." and the same review link everyone gets.
-5. Say: "No stars were asked. Everyone gets the same link. We never post for the visitor." Do not tap through to Google and do not post a review.
+2. Record a WhatsApp voice note in English about a pretend tour (10 to 15 seconds). Speak as yourself. Do not name real people.
+3. Expected: your words as clean text (no facts or feelings changed) plus the options POST / EDIT / NO. The text is cleaned only: it never adds anything you did not say.
+4. Send `POST`. Expected: two messages. The text alone (press and hold, Copy), then "To post it: tap the link, paste..." and the same review link everyone gets.
+5. Tap the link. Google opens the review box. Paste your text. Say: "No stars were asked. Everyone gets the same link. We never post for the visitor."
+6. Do NOT press Post unless this is a genuine review of a place you really visited. Close the page instead. Posting a made-up review is against Google's rules and against what this tool is for.
 
 ## 5. Scene: cross-community recommendation (about 20 seconds, SIMULATED)
 
