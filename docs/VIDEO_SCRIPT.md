@@ -22,7 +22,7 @@ Not sourced (do not state as fact): language barriers, share of operators with a
 
 ## Required one-liner (use this wording on screen and aloud)
 
-"Because of Teranga, a Gambian tourism operator will turn one phone call in Wolof into answers tourists can read in English, German or Dutch, within a week and without internet. Her Google listing is drafted from those answers, and tourists can leave a review by voice. Each week she learns what tourists ask, and her community looks out for one another with shared notices and referrals. Without it, she misses or answers late the enquiries she can't read. We know because the World Bank figures above show how much tourism earns and how many Gambians are still offline. This is the gap we target, not a measured result."
+"Because of Teranga, a Gambian tourism operator will turn one phone call in Wolof into answers tourists can read in English, German or Dutch, without internet. Her Google listing is drafted from those answers, and tourists can leave a review by voice. Each week she learns what tourists ask, and her community looks out for one another with shared notices and referrals. Without it, she misses or answers late the enquiries she can't read. We know because the World Bank figures above show how much tourism earns and how many Gambians are still offline. This is the gap we target, not a measured result."
 
 ## Script (full cut about 4 minutes 50 seconds; limit 5:00)
 

@@ -13,7 +13,7 @@ publishes those pre-approved answers. Visitors scan a QR code or message WhatsAp
 get the nearest pre-approved answer as voice and text in their language.
 
 Video one-liner (required format) — DRAFT:
-> Because of Teranga, a Gambian tourism operator will turn one phone call in Wolof into answers tourists can read in English, German or Dutch, within a week and without internet. Her Google listing is drafted from those answers, and tourists can leave a review by voice. Each week she learns what tourists ask, and her community looks out for one another with shared notices and referrals. Without it, she misses or answers late the enquiries she can't read. We know because the World Bank figures above show how much tourism earns and how many Gambians are still offline.
+> Because of Teranga, a Gambian tourism operator will turn one phone call in Wolof into answers tourists can read in English, German or Dutch, without internet. Her Google listing is drafted from those answers, and tourists can leave a review by voice. Each week she learns what tourists ask, and her community looks out for one another with shared notices and referrals. Without it, she misses or answers late the enquiries she can't read. We know because the World Bank figures above show how much tourism earns and how many Gambians are still offline.
 > and Dutch with her own pre-approved words, every week, instead of losing enquiries she
 > cannot read or reply to; we know because **[OPEN: cite verified UN Tourism / WDI /
 > Enterprise Surveys figures with year and country]**.
