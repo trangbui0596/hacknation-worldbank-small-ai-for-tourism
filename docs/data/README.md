@@ -150,3 +150,39 @@ collection so each record can be read on its page:
 `www.gambiantour.com`, `bushwhackertours.com`, `visitthegambia.com`, `gambia-birdingtours.com`.
 Also blocked in my tests but not used: `www.enjoygambia.com`, `www.gambiatours.gm`, `www.africatouroperators.org`,
 `www.travellersquest.com`, `www.gambiabirdtours.com`.
+
+## Hold-out questions (second batch): `gambia_tour_questions_holdout.json`
+
+A fresh set for an untuned test of the keyword matcher. **103 questions from 14 sites that are not in the first file**
+(checked by site and by exact wording; no question is repeated from the first file). I did not open the matcher or its
+keyword lists, and I did not adjust any wording: it is copied as published (collected 2026-10-04).
+
+- **Fields:** same as the first file plus `region`. `region` is `gambia` for 98 (Gambian business, official page, or a page about
+  The Gambia) and `other` for 5 (a Ghana operator FAQ, 2; a South Senegal trip page of a Gambian operator, 3).
+  `capture` is `search_extract` for all 103, `rewritten` is `false` for all. Nothing could be read on the page: all 14 source hosts
+  are blocked in the sandbox (see the last bullet). The only reachable site, Wikivoyage, has no further visitor questions on its Gambia talk pages.
+- **Sources (count):** Explorer Gambia page FAQs 21; SeneGambia Travel guide FAQs 15 (a guide site that also lists hotels and tours,
+  so drop these 15 if you treat it as a reseller); Senegambia Birding FAQ 14; Evergreen Eco Retreat FAQ 12; Lemon Creek Hotel FAQ and two
+  blog titles 10; Gambia Birding Tour FAQ 9 (`gambiabirdingtour.com`, a different site from `gambia-birdingtours.com` in the first file;
+  search results also show spam pages on it); Visit Gambia to Support Gambia 8 (4 FAQ, 4 page titles); Janeya Tours guide FAQ 4;
+  Embassy of The Gambia in Brussels FAQ 4; Time4Africa Tours (Ghana) FAQ 2; four price-type page titles from BudgetYourTrip,
+  The World Travel Index, Lovely Camel and SizzleRoom. The question part of each title is kept, the rest of the title is dropped.
+- **Label mix (my judgment):** other 58, safety 11, how to book 8, what to bring 8, children 5, price 4, whats included 3,
+  food 3, duration 3, meeting point 0, cancellation 0. The sources had no meeting-point or cancellation questions.
+  Airport-transfer questions ("Do you supply an Airport Service?") are labelled `other`, not `meeting point`. The off-topic share is
+  high on purpose (visas, vaccines, money, electricity, internet, photography, flights, language, tipping, alcohol, pets).
+- **How questions were kept:** the exact wording had to come back in at least two separate searches (page titles: in at least two result
+  lists). Two exceptions: "How long does the Barra ferry take?" (one search plus one repeat) and the Kunta Kinteh Island guide, where one
+  run gave shorter headings ("How long is the boat trip?"), so I used the wording that came back twice. All-caps headings (Lemon Creek) are in
+  sentence case; a missing question mark was added where another run showed one. Left out: questions seen once, headings that are not
+  questions ("Special diet (including vegetarian)"), Nepal-trekking template leftovers on some Explorer Gambia pages, consular questions
+  (birth certificates, passports), the BudgetYourTrip "How Much Do Tours to the Gambia Cost?" page (it lists tours for sale), forums
+  (terms), and My Gambia and kimkim (booking platforms).
+- **Caveats:** wording comes from search-tool text, not from the pages, so small differences from the published text are possible.
+  Page-title questions (10 of 103) are SEO titles, not typed messages. Several questions come from one template per operator, so
+  Explorer Gambia items are alike. Same skip list as above (TripAdvisor, resellers, Reddit, Quora, forums).
+- **Blocked for fetching (EGRESS_BLOCKED), so not read directly:** all 14 source hosts (`www.explorergambia.com`, `senegambiatravel.com`,
+  `www.senegambiabirding.com`, `evergreengambia.com`, `gambiabirdingtour.com`, `www.lemoncreek.net`, `visitgambiatosupportgambia.com`,
+  `janeyatours.com`, `gambiaembassy.eu`, `time4africatours.com`, `www.budgetyourtrip.com`, `theworldtravelindex.com`, `lovelycamel.com`,
+  `sizzleroom.com`) and also `feelfreegambia.com`, `gambia.gov.gm`, `www.gov.uk`, `wwwnc.cdc.gov` and the German, French and Dutch
+  Wikivoyage. About 160 searches and 3 Wikivoyage requests (Talk:Banjul read, 2 pages not found) were used.
