@@ -113,6 +113,14 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Commit 559978d: champion-facing messages now Wolof first, English second (menu, "Got question N", question prompts, round hint/stop/help, review queue labels, approval confirmations, "still processing", transcript-heard message). Fixed templates in `src/lib/champion.templates.ts`; UNVERIFIED Wolof written by Claude, no native review. 88 tests pass. NOT yet tested live on WhatsApp.
 - Not localized yet: agent chat replies (LLM; told to answer in the champion's language), digest/SMS text, FEEDBACK flow, MORE/LISTING demos.
 
+## Update 15: Layout A, numbers fix, STOP replaced by DONE (2026-10-04 ~01:35 UTC)
+- Commit 7906c67 (numbers): "yuñi ak juróom teemeer daala sii" now reads "about 1500 + dalasi" (was "about 500", a wrong price). An unknown word before "ak" now says "please confirm" instead of showing a smaller number. Still UNVERIFIED on real speech.
+- Commit 5b761f6 (STOP): Twilio's WhatsApp sandbox intercepts the word STOP and disconnects the sender. All champion hints now say DONE (STOP, DONE and EXIT are still accepted if typed). Do not type STOP during the demo.
+- Commit 939ca8e (layout A, chosen by the user): champion messages are one block each, Wolof main line plus small English in italics, bold headings, emoji markers (🎙️ what we heard, 🔢 numbers, ⚠️ only real flags, 1️⃣ 2️⃣ 3️⃣ options). Routine flags (machine-translated, unverified Wolof, phone call) are hidden from the review message and shown once in a footer. 94 tests pass.
+- Lesson: wait until the Lovable edit for a commit shows "completed" (`list_edits`) BEFORE `deploy_project`; publishing earlier shipped the older build once.
+- Deployed 939ca8e at ~01:33 UTC. NOT yet tested live on WhatsApp.
+- Still untested live: visitor voice note, 2-question call after redeploy, agent chat, FEEDBACK, MORE/LISTING, COACH in the new Wolof layout, digest.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
