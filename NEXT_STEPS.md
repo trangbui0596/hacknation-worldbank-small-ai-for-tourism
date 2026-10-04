@@ -175,3 +175,10 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - The user is not an experienced coder and works with Claude Code and Cursor. Ask for their
   input before big decisions and explain in plain language.
 - Label anything simulated as simulated. Never present synthetic data as real.
+
+## Update 20: 60-second storybook video, claim check, hardening plan (2026-10-04)
+- Submission video is now a 59.4 s paper-collage cut (`docs/VIDEO_SCRIPT.md` "Current 60-second cut", `docs/VIDEO_PRODUCTION.md`, scripts in `docs/video_assets/pipeline/`, narration in `docs/video_assets/narration_60s.json`, art prompts in `docs/video_assets/AI_ILLUSTRATIONS.md`).
+- Opening, Noor, tourist, community and closing segments all use layered cut-paper art (AI-generated, credited). Noor's segment now shows AI-suggested-question wording, approval by one digit, the SMS-first and weekly-WhatsApp tags and an AI coaching card. The "what is next" idea and the money / number-sharing lines were removed on request.
+- Music: the Artlist preview file has a spoken watermark at 30.6 s (and "Artlist.io" at 60.6 s). It is patched for now with `docs/video_assets/pipeline/clean_music.sh`. TODO for the user: download the licensed clean track and confirm the licence.
+- Claim check found two lines that overstate the code (see `docs/VIDEO_SCRIPT.md`): the 10 question cards are fixed (no AI suggests them) and the weekly coaching analysis is keyword counting with no AI model. Fix by rewording or by building the AI steps (decision pending with the user).
+- Still open for the user: rotate `DIGEST_TRIGGER_SECRET` (it appeared in a screenshot), restrict the Google Maps browser key, change `DEMO_CHAMPION_PIN` after filming, confirm real-photo splash screens are gone (they are in this cut), Twilio budget, native Wolof review.

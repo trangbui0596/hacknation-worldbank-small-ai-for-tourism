@@ -1,5 +1,7 @@
 # Teranga demo runbook (for the 2 to 5 minute video)
 
+> **Current submission cut: 60 seconds.** The scenes below are how the clips were filmed; the finished video uses only parts of them. See `docs/VIDEO_SCRIPT.md` (60-second cut and claim check) and `docs/VIDEO_PRODUCTION.md`.
+
 Live app: https://teranga-gambia.lovable.app. Code: https://github.com/trangbui0596/teranga-gambia (branch main).
 Persona: Noor, a FICTIONAL tourism operator in The Gambia. Test audio is SYNTHETIC (ElevenLabs reading Wolof text), not a real speaker.
 

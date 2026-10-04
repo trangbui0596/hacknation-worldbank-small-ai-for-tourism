@@ -1,0 +1,20 @@
+{
+  "voice": "ElevenLabs 'Sarah' (EXAVITQu4vr4xnSDxMaL), model eleven_multilingual_v2, stability 0.55, similarity 0.75",
+  "note": "Start times are seconds inside the finished 59.4 s video. The synthetic Wolof and the voice notes inside the phone recordings are separate from this narration.",
+  "lines": [
+    {"id": "o1g", "start": 0.3,  "text": "A tourist writes in German."},
+    {"id": "o2",  "start": 2.6,  "text": "Noor speaks Wolof."},
+    {"id": "o3",  "start": 4.8,  "text": "The message goes unread."},
+    {"id": "m1a", "start": 8.8,  "text": "AI suggests questions about her business. Noor answers each by voice."},
+    {"id": "m1b", "start": 13.4, "text": "It all runs on SMS, offline. WhatsApp is only a weekly sync."},
+    {"id": "m1c", "start": 17.35, "text": "She approves each answer with one digit. Nothing goes out without her."},
+    {"id": "m2",  "start": 21.95, "text": "Teranga drafts her Google listing."},
+    {"id": "m3",  "start": 24.3, "text": "Each week, AI analyses fresh reviews and questions, then coaches Noor by SMS, in Wolof."},
+    {"id": "b1n", "start": 30.7, "text": "The tourist asks. Teranga answers in Noor's words."},
+    {"id": "b3",  "start": 37.7, "text": "Later she speaks a review. Teranga cleans it up, and she posts it herself."},
+    {"id": "c1n", "start": 43.1, "text": "One flood notice reaches the whole community."},
+    {"id": "c2b", "start": 46.4, "text": "Every tourist sees it under their next answer."},
+    {"id": "c3t", "start": 49.8, "text": "A visitor wants something else? A neighbour is suggested, and a person connects them."},
+    {"id": "e3",  "start": 54.7, "text": "Teranga gives Noor her voice, and her community its champion."}
+  ]
+}

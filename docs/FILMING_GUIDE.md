@@ -1,5 +1,7 @@
 # How to film the Teranga demo video (plain-language guide)
 
+> **Current submission cut: 60 seconds** (not 4 to 4.5 minutes). The clips below are still filmed this way; `docs/VIDEO_PRODUCTION.md` explains how the 60-second video is built from them.
+
 Target: 4 to 4.5 minutes (the limit is 5). You need: your phone (WhatsApp, the call), a laptop (plays the clips, shows the live page), and a free video editor. Use `docs/VIDEO_SCRIPT.md` for the words and `docs/DEMO_RUNBOOK.md` for the exact messages to send. This guide is only about filming.
 
 Honesty rule for the whole video: say out loud that the Wolof audio is synthetic, the Wolof wording is unchecked by a native speaker, and the partner recommendation and Google listing parts are simulated. The script already includes these lines.

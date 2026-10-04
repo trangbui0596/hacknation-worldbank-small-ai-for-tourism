@@ -1,4 +1,33 @@
-# Teranga video script (target 3 to 4 minutes; limit 5)
+# Teranga video script
+
+**Submission cut: 59.4 s (limit 60 s). The long-form 3 to 4 minute script further down is kept as a reference for a longer cut.**
+Track: World Bank x Hack-Nation "Small AI for Development", Tourism. Companion: `docs/DEMO_RUNBOOK.md` (exact steps for filming the clips) and `docs/VIDEO_PRODUCTION.md` (how the cut is built).
+Persona Noor is fictional. All Wolof test audio is synthetic. All paper-collage art is AI-generated.
+
+## Current 60-second cut
+
+Style: layered paper-collage storybook, one idea per screen, one short caption at a time with the key word highlighted. Screen recordings are filmed on WhatsApp and mirror the SMS commands (footer: "Shown on WhatsApp, same commands by SMS").
+
+| Time | Visual | Narration (verbatim) |
+| --- | --- | --- |
+| 0:00-0:08 | Three paper pages tear in: tourist writing "Guten Tag!", Noor with an unread message, the unread phone; then a stamp bridge and the Teranga logo card (evidence strip: US$157M tourism receipts 2019, about half of Gambians offline, World Bank WDI) | "A tourist writes in German. Noor speaks Wolof. The message goes unread." |
+| 0:08-0:30 | **1 Noor.** Card of AI-suggested questions (price, meeting point, duration, what is included, how to book, cancellation); she answers by voice; tags "SMS + voice, no internet" then "WhatsApp, weekly sync only"; approval with one digit; Google listing drafted; **AI COACHING** card: latest reviews + tourist questions, AI analyses the data, Wolof SMS tips to improve her service | "AI suggests questions about her business. Noor answers each by voice. It all runs on SMS, offline. WhatsApp is only a weekly sync. She approves each answer with one digit. Nothing goes out without her. Teranga drafts her Google listing. Each week, AI analyses fresh reviews and questions, then coaches Noor by SMS, in Wolof." |
+| 0:30-0:42 | **2 The tourist.** Question in her own language, the approved answer as text and an AI voice note (labelled), a voice review cleaned up, she pastes it into Google herself | "The tourist asks. Teranga answers in Noor's words." (voice note: "The price is fifteen hundred dalasi per adult.") "Later she speaks a review. Teranga cleans it up, and she posts it herself." |
+| 0:42-0:55 | **3 The community.** One flood notice to the community, shown under every answer, a neighbour suggested | "One flood notice reaches the whole community. Every tourist sees it under their next answer. A visitor wants something else? A neighbour is suggested, and a person connects them." |
+| 0:55-1:00 | Logo, closing line, links, stamp bridge joining tourist and Noor | "Teranga gives Noor her voice, and her community its champion." |
+
+Claim check for the cut (checked against the code on 2026-10-04). Two lines overstate what the code does today and must be fixed before submission, either by rewording the narration or by building the missing AI step (see `NEXT_STEPS.md`, update 20):
+- **OPEN ISSUE 1, "AI suggests questions about her business":** Noor's 10 question cards are a fixed list (price, meeting point, duration, what is included, how to book, cancellation and so on). The listing builder and the weekly sync tell her which card to record next from gaps and "not clear" visitor questions, using plain rules, not an AI model. Honest wording now: "Teranga asks her ten questions about her business." To make the AI wording true: add an AI step that proposes new question cards from unanswered visitor questions, with a person approving each one.
+- **OPEN ISSUE 2, "AI analyses fresh reviews and questions, then coaches Noor":** the weekly sync re-reads public Google reviews, counts themes with fixed keyword lists, adds visitors' "not clear" questions and writes up to three plain actions from counts (README: "counts only, no AI"). The AI parts today are speech recognition, translation, voice and review clean-up. Honest wording now: "Each week, Teranga reads fresh reviews and visitors' questions and texts Noor what to improve, in Wolof." To make the AI wording true: add an AI theme-extraction step whose output code verifies against the review text (quotes must exist, counts computed by code).
+- "Fresh": the weekly sync re-reads a small public sample of reviews; it is fresh, not real time. Do not say real time.
+- "Approves each answer with one digit": true; the REVIEW flow shows the Wolof transcript and the numbers, and nothing reaches a visitor before approval.
+- "A person connects them": true; referrals are suggestions, the partner list is simulated, and no payment or number sharing is claimed in the video.
+- "It all runs on SMS, offline. WhatsApp is only a weekly sync": true for Noor and the community champion. Visitors use WhatsApp for real (the tourist segment shows it), so say "for Noor".
+- The footer states that Wolof audio is synthetic and Noor is fictional; Wolof wording is unverified by a native speaker (README, "Honest limits").
+
+---
+
+# Long-form script (earlier plan, target 3 to 4 minutes; limit 5)
 
 Track: World Bank x Hack-Nation "Small AI for Development", Tourism.
 Companion: `docs/DEMO_RUNBOOK.md` (exact steps and what to click). Persona Noor is fictional. All Wolof test audio is synthetic.
