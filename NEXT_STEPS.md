@@ -137,6 +137,13 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Lesson: never run `prettier --write` on existing app files (it rewrote all of tourcoach.server.ts once; reverted). AGENTS.md now says so.
 - Still untested live: everything in this update, plus visitor voice note, agent chat, FEEDBACK, MORE, digest.
 
+## Update 18: household-champion rename, Noor PIN-free review, page redesign, video kit (2026-10-04 ~04:00 UTC)
+- "Helper" is now "household champion" everywhere. Noor approves her own answers (no PIN) by SMS or WhatsApp.
+- Landing page redesigned (people cards, five-step flow, stat tiles). Community tab explains what a community notice is with a three-step example. Deployed.
+- Video kit in `docs/VIDEO_PRODUCTION.md` and `docs/video_assets/` (narration mp3s, cards, assemble.py).
+- Reference winner video on Drive cannot be opened from here (needs drive.google.com + *.googleusercontent.com allowed, or screenshots).
+- Still unverified live: REVIEW then LISTING; COMMUNITY PIN then ALERT; visitor sees notice; BILINGUAL.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
