@@ -1,0 +1,25 @@
+{
+  "indicator_id": "PA.NUS.FCRF",
+  "indicator_name": "Official exchange rate (LCU per US$, period average)",
+  "country_iso3": "GMB",
+  "country_name": "Gambia, The",
+  "value": 71.2893818242692,
+  "year": 2025,
+  "unit": "Gambian dalasi (GMD) per 1 US dollar, annual period average of the official rate",
+  "latest_available_year_checked": "mrv=3 returned 2025, 2024 and 2023; 2025 is the newest",
+  "earlier_years_returned": [
+    { "year": 2024, "value": 67.661238258942 },
+    { "year": 2023, "value": 61.0963330077956 }
+  ],
+  "source": "World Bank, World Development Indicators (API source id 2)",
+  "source_last_updated": "2026-07-13",
+  "api_url": "https://api.worldbank.org/v2/country/GMB/indicator/PA.NUS.FCRF?format=json&mrv=3",
+  "retrieved": "2026-10-04",
+  "fetched_with": "direct HTTPS request to the World Bank API (no search tool involved)",
+  "eur_gbp_rates": null,
+  "notes": [
+    "This is a yearly average of the official rate, not a daily market rate. Dalasi street or bureau rates can differ.",
+    "No EUR or GBP rate was fetched and none is invented here. Prices in gambia_tour_prices.json stay in their original currency (GMD, EUR or GBP).",
+    "To convert EUR or GBP to GMD, take a dated rate from a citable page (for example an ECB reference rate page) and record its URL and date next to the result."
+  ]
+}
