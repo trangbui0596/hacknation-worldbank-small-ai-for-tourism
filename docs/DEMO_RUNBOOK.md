@@ -12,6 +12,7 @@ Persona: Noor, a FICTIONAL tour operator in The Gambia. Test audio is SYNTHETIC 
 - [ ] Fresh coaching data (the cache lasts 24 hours). In a terminal, with your digest secret:
   - Mac/Linux: `read -s -p "Digest secret: " S; echo; curl -s -m 60 -X POST https://teranga-gambia.lovable.app/api/public/coach-run -H "x-digest-secret: $S"; unset S`
   - Windows PowerShell: `$s = Read-Host "Digest secret"; Invoke-RestMethod -TimeoutSec 60 -Method Post -Uri https://teranga-gambia.lovable.app/api/public/coach-run -Headers @{"x-digest-secret"=$s}`
+- [ ] Optional secret `GOOGLE_REVIEW_URL`: the link everyone gets for the review. Without it the message says "[review link not set yet, Simulated]", which is honest but looks unfinished. Use the real Google review link of a place you own or run; never a real business you do not own, and never post a fake review.
 - [ ] Put the two clips on the laptop: `SYNTHETIC_q01_price.mp3` and `SYNTHETIC_q05_children.mp3` (folder `docs/test_audio/` in the repo).
 - [ ] Phone: Wi-Fi and mobile data OFF for the call scene (a feature phone has no data). Voice signal ON.
 - [ ] Do NOT type the word STOP in the WhatsApp sandbox: Twilio treats it as "leave the sandbox". Use DONE.
@@ -26,10 +27,12 @@ Counts are the messages the app SENDS (my estimate from the code; I do not know 
 | 1. Call | (phone call) | WhatsApp summary of the call | 1 |
 | 2. Family helper (this is also the smoke test of the new layout) | `REVIEW <PIN>`, `REVIEW`, `1`, `1` | menu, review message, approval x2 | 5 |
 | 3. Visitor | `EXIT`, price question, kids question, unrelated question, `YES` | 1 + 2 + 2 + 1 + 1 | 7 |
-| 4. Coaching | `COACH` | Wolof coaching message | 1 to 2 |
+| 4. One-tap review | `FEEDBACK`, your own voice note, `POST` | prompt, clean text + options, then 2 (text, link) | 4 |
+| 5. Cross-community | `MORE`, `1 YES`, `CONNECT` | question, suggestion, confirmation | 3 |
+| 6. Coaching | `REVIEW <PIN>`, `COACH` | menu, Wolof coaching message | 2 |
 | Spare | `COACH EN`, German question | | 1 to 4 |
 
-Core total about 15 to 16. Skip the optional scenes (LISTING, MORE, digest). Record each take separately and cut them together. Do not retry a take in a loop. If a take fails, note the error code and use the fallback recording (section 7).
+Core total about 22 to 24. Skip the optional scenes (LISTING, digest). Record each take separately and cut them together. Do not retry a take in a loop. If a take fails, note the error code and use the fallback recording (section 9).
 
 ## 1. Scene: Noor records by phone call (about 40 seconds)
 
@@ -57,28 +60,43 @@ Core total about 15 to 16. Skip the optional scenes (LISTING, MORE, digest). Rec
 5. Ask something unrelated, for example `Do you offer night tours?` Expected: "Not sure, Noor will answer." Say: "It never guesses."
 6. Reply `YES` to "Was this clear?". Say: "The review link is the same for everyone. No review gating."
 
-## 4. Scene: coaching from real public reviews (about 30 seconds)
+## 4. Scene: one-tap Google review, in the visitor's own words (about 25 seconds)
+
+1. Still in visitor mode, send `FEEDBACK`. Expected: a prompt saying nothing is posted for you and the review is yours.
+2. Record a WhatsApp voice note in English about a pretend tour (10 to 15 seconds). It is your own voice playing a visitor. Do not invent a real business or a real person.
+3. Expected: your words as clean text (no facts or feelings changed) plus the options POST / EDIT / NO.
+4. Send `POST`. Expected: two messages. The text alone (press and hold to copy), then "To post it: tap the link, paste..." and the same review link everyone gets.
+5. Say: "No stars were asked. Everyone gets the same link. We never post for the visitor." Do not tap through to Google and do not post a review.
+
+## 5. Scene: cross-community recommendation (about 20 seconds, SIMULATED)
+
+1. Send `MORE`. Expected: "Do you prefer nature, culture or food?... (opt-in)... (Simulated)".
+2. Send `1 YES`. Expected: a suggestion for a fictional partner, "(Simulated partner)", no payment, number not shared.
+3. Send `CONNECT`. Expected: "Noted (Simulated)... a person passes on the contact".
+4. Say: "These partners are fictional samples. Suggestions rotate fairly. In real use only operators who opted in would appear."
+5. Optional, only if time allows: in champion mode send `LEDGER` to show the contact request waiting (costs 2 messages).
+
+## 6. Scene: coaching from real public reviews (about 20 seconds)
 
 1. `REVIEW <PIN>`, then `COACH`. Expected: Wolof message with counts (places, reviews analyzed, date range), top themes, up to 3 actions, limits, and the unverified-Wolof label.
-2. `COACH EN` for English. Say: "Real Google Maps data: a small sample, a few reviews per place. If there is not enough data, it says so."
+2. Say: "Real Google Maps data: a small sample, a few reviews per place. If there is not enough data, it says so." Send `COACH EN` only if you have messages to spare.
 
-## 5. Optional scenes (only if time allows and they were tested)
+## 7. Optional scenes (only if time allows and they were tested)
 
 - `LISTING`: draft Google Business profile from approved answers only (SIMULATED, nothing published).
-- `MORE` (visitor mode): scripted partner recommendation (SIMULATED).
-- Weekly digest: trigger with the digest secret; lands on WhatsApp (SMS pending registration).
+- Weekly digest: trigger with the digest secret; lands on WhatsApp in Wolof first (SMS pending registration).
 
-## 6. What to say about limits (honest, required)
+## 8. What to say about limits (honest, required)
 
 - The Wolof audio is synthetic text-to-speech, not a native speaker. Recognition accuracy on real Wolof speech is UNTESTED.
 - The Wolof text in the app (labels, coaching) is machine-written and UNVERIFIED by a native speaker.
 - Translation is machine translation and says so on every answer.
 - The 20-question matching test is agent-written test data (not real visitors). Do not quote it as accuracy.
 - SMS needs US carrier registration (in review), so messages are delivered on WhatsApp via Twilio's sandbox.
-- Parts that are simulated: partner recommendation, Google listing preview, anything labeled Simulated.
+- Parts that are simulated: the partner list and recommendation, the Google listing preview, anything labeled Simulated. The review flow is real up to the link: the visitor posts it themselves.
 - Reviews data: real, public, small sample, coverage thin.
 
-## 7. If something fails during recording
+## 9. If something fails during recording
 
 - Do not retry in a loop (each message uses sandbox budget). Check the Twilio Message Logs and tell Claude the error code.
 - Fall back to a pre-recorded successful run, and label it as a recording of an earlier run.

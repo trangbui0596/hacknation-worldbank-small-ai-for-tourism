@@ -121,6 +121,13 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Deployed 939ca8e at ~01:33 UTC. NOT yet tested live on WhatsApp.
 - Still untested live: visitor voice note, 2-question call after redeploy, agent chat, FEEDBACK, MORE/LISTING, COACH in the new Wolof layout, digest.
 
+## Update 16: community features, digest, landing page, filming guide (2026-10-04 ~01:45 UTC)
+- Teranga repo commit 5177da2 (published): Wolof-first weekly digest on WhatsApp (`src/lib/digest.templates.ts`; the SMS keeps the registered A2P wording); German and Dutch texts for MORE / CONNECT / partner suggestions; the champion `LEDGER` shows waiting contact requests; after POST the visitor gets the review text alone and then "how to post" + the same Google link (`reviewStepsMessage`); judge-facing landing page at `/` (AI-that-SMS-cannot-do section, community section, honest limits, WDI figures) and a rewritten README. 101 tests pass.
+- Decisions: skipped pricing range (no honest data) and voice cloning (needs Noor's consent). No DELETE-recordings command was built (the user did not pick it); the landing page and README say so plainly.
+- Optional secret `GOOGLE_REVIEW_URL` (the review link). Without it the message says "[review link not set yet, Simulated]".
+- Docs: `docs/FILMING_GUIDE.md` (new), `docs/VIDEO_SCRIPT.md` (6 scenes, 4:15), `docs/DEMO_RUNBOOK.md` (scenes 4 review, 5 cross-community, 6 coaching, budget table).
+- Still untested live: everything above, plus visitor voice note, agent chat, FEEDBACK, MORE, LISTING, COACH in the new layout, digest.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
