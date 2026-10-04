@@ -101,6 +101,13 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - CORRECTION (Claude read the code, src/lib/coach.ts + coach.templates.ts): there is NO confirmed COACH actions bug. The Wolof `kañ nañu ko` = "praise it" and `ñaxtu nañu` = "complain". `actionLines` orders complaint themes first, praise second, like the first English version. Lovable's sample output showed only praise lines, probably because of the test data it used. To settle it, run COACH live once (the cached run from ~00:14 UTC is fresh for 24 h) and check that complaint items (boat/equipment, children, duration at 2 of 70) come first.
 - Wolof strings are machine-translated and unverified; back-translation drift was found and corrected for 6 strings.
 
+## Update 13: CODE NOW EDITABLE FROM CLAUDE CODE (2026-10-04 ~01:10 UTC)
+- Lovable project is linked to GitHub: https://github.com/trangbui0596/teranga-gambia (branch main). Pushes to main SYNC INTO LOVABLE (verified: a Claude push became Lovable's latest_commit_sha), apparently without Lovable credits (Lovable agent messages are blocked while out of credits). `deploy_project` still works to publish.
+- Local checkout: /home/user/teranga-gambia. The lockfile points at Lovable's private package mirror (blocked here), so install with `npm install --no-package-lock --no-audit --no-fund --legacy-peer-deps`, then `npx vitest run` and `npx tsc --noEmit -p .`. All 82 tests pass.
+- Pushed commit b2d4e23: matcher tie-break (generic words like "bring" no longer tie with "kids"; "pick us up" phrases). Local score on the 20 agent-written evaluation questions: 20/20 correct, 0 wrong (was 18/20). CAUTION: the tie-break was tuned on the two misses, so 20/20 is optimistic; evaluation data is agent-written test data, not real visitors.
+- Published the matcher fix (deployment from commit b2d4e23).
+- Unresolved question: why Lovable's sample Wolof COACH showed only praise lines in actions (code orders complaints first; probably test data). Verify live with COACH (24 h cache from ~00:14 UTC).
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
