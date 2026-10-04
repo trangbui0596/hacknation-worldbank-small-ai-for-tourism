@@ -22,7 +22,7 @@ Not sourced (do not state as fact): language barriers, share of operators with a
 
 ## Required one-liner (use this wording on screen and aloud)
 
-"Within a week of one phone call, a Gambian tourism operator on a basic phone can answer visitors in English, German and Dutch, by voice or text, in her own approved words. Plain SMS gives her coaching, a Google listing and community notices, with a household champion and a community champion behind her. Today she misses or answers late the enquiries she can't read; the World Bank figures above show how much tourism earns and how many Gambians are still offline. This is the gap we target, not a measured result."
+"Because of Teranga, a Gambian tourism operator who speaks Wolof on a basic phone can, within a week of one phone call, answer tourists in English, German and Dutch with answers she recorded and approved herself. Without it, she misses or answers late the enquiries she can't read. We know because the World Bank figures above show how much tourism earns and how many Gambians are still offline. This is the gap we target, not a measured result."
 
 ## Script (full cut about 4 minutes 50 seconds; limit 5:00)
 

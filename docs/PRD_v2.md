@@ -13,7 +13,7 @@ publishes those pre-approved answers. Visitors scan a QR code or message WhatsAp
 get the nearest pre-approved answer as voice and text in their language.
 
 Video one-liner (required format) — DRAFT:
-> Within a week of one phone call, a Gambian tourism operator on a basic phone can answer visitors in English, German and Dutch, by voice or text, in her own approved words. Plain SMS gives her coaching, a Google listing and community notices, with a household champion and a community champion behind her. Today she misses or answers late the enquiries she can't read; the World Bank figures above show how much tourism earns and how many Gambians are still offline.
+> Because of Teranga, a Gambian tourism operator who speaks Wolof on a basic phone can, within a week of one phone call, answer tourists in English, German and Dutch with answers she recorded and approved herself. Without it, she misses or answers late the enquiries she can't read. We know because the World Bank figures above show how much tourism earns and how many Gambians are still offline.
 > and Dutch with her own pre-approved words, every week, instead of losing enquiries she
 > cannot read or reply to; we know because **[OPEN: cite verified UN Tourism / WDI /
 > Enterprise Surveys figures with year and country]**.
