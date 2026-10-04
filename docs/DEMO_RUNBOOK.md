@@ -21,6 +21,13 @@ Persona: Noor, a FICTIONAL tourism operator in The Gambia. Test audio is SYNTHET
 - [ ] Do NOT type the word STOP in the WhatsApp sandbox: Twilio treats it as "leave the sandbox". Use DONE.
 - [ ] Reset the demo state if needed: send `EXIT` to leave any open round.
 
+## Loading or redoing answers (read this before sending voice notes)
+
+- A voice note only counts as an answer during a recording round. Send `START` first; the app asks question 1 (price), you send the voice note, it asks question 2, and so on. Send `DONE` to end the round.
+- A voice note sent outside a round goes to the AI assistant instead and gets a "Man naa:" menu reply. That is not an error, just the wrong mode.
+- Reply `2` ("record again") to a review card only marks it; then send `START` and record again from question 1.
+- Use the synthetic clips from `docs/test_audio/` (send them as voice messages). Speaking Wolof yourself, or playing a clip through a speaker, can make the recognizer return Cyrillic or Arabic letters. The app now retries once without a language hint and otherwise flags the answer so you can record it again.
+
 ## Filming decision: all scenes on WhatsApp
 
 Live SMS is blocked (carrier registration in review; your carrier also blocked the test text). Film scenes 2, 6 and 7 on WhatsApp using the same commands and say the line in the video script ("WhatsApp mirrors the SMS commands"). For scene 7 show the Try SMS tab on the live page as a labeled simulation. Skip the Twilio SMS webhook setup.
