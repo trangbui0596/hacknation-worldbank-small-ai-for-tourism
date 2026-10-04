@@ -24,25 +24,31 @@ Not sourced (do not state as fact): language barriers, share of operators with a
 
 "Because of this tool, a Gambian tour operator will be able to answer visitors in English, German and Dutch with her own pre-approved words instead of missing enquiries she cannot read or reply to. The need: only 49.5% of people in The Gambia used the Internet in 2024, while tourism brought in 43.6% of exports in 2019, the last year before COVID. This is the gap we target, not a measured result."
 
-## Script (target 4 minutes 15 seconds; limit 5:00)
+## Script (full cut about 4 minutes 50 seconds; limit 5:00)
 
 **0:00 The problem (20 s).** "Meet Noor, a fictional tour operator in The Gambia. She knows her tours. Visitors write in English, German or Dutch. She speaks Wolof and has a basic phone. Tourism earned The Gambia US$157 million in 2019, and about half of Gambians are still not online. [Show the numbers on the live page; every one links to the World Bank.]"
 
-**0:20 Why AI, not just SMS (25 s).** "Teranga is Wolof for hospitality. Plain SMS cannot do three things Noor needs. It cannot hear Wolof. It cannot translate her words and check the meaning survived. It cannot speak an answer in a visitor's language. Teranga does all three, and it never makes up an answer." [On screen: the three icons or the 'What the AI does that plain SMS cannot' section of the live page.]
+**0:20 Why AI, not just SMS (20 s).** "Teranga is Wolof for hospitality. Plain SMS cannot hear Wolof, cannot translate and check the meaning, and cannot speak an answer in a visitor's language. Teranga does all three, and Noor never needs the internet: she records by phone call and keeps what she needs as text messages." [On screen: the 'Works offline' and 'AI beyond SMS' tabs.]
 
-**0:45 Scene 1, the call (35 s).** Runbook scene 1. "No internet needed. A simple phone call. Speech recognition turns her Wolof into text." Say that the clips are synthetic and the summary arrives on WhatsApp because SMS registration is in review.
+**0:40 Scene 1, the call (30 s).** Runbook scene 1. "A simple phone call. Speech recognition turns her Wolof into text." Say that the clips are synthetic and the summary arrives on WhatsApp because SMS registration is in review.
 
-**1:20 Scene 2, the family helper (50 s).** Runbook scene 2. "A family member reviews on WhatsApp. She sees Wolof, not English: the transcript, and the numbers the AI heard, here about 1500 dalasi, so she can confirm a price without reading English. She approves. Nothing reaches a visitor without her approval."
+**1:10 Scene 2, the household helper (40 s).** Runbook scene 2. "A family member reviews on WhatsApp. She sees Wolof, not English: the transcript and the numbers the AI heard, here about 1500 dalasi, so she can confirm a price without reading English. She approves. Nothing reaches a visitor without her approval."
 
-**2:10 Scene 3, the visitor (45 s).** Runbook scene 3. "A visitor asks in English or German and gets the approved answer as text and an AI voice, labeled machine-translated. If it is not sure, it says Noor will answer. It never guesses. Matching here is plain rules, on purpose."
+**1:50 Scene 3, the visitor (35 s).** Runbook scene 3. "A visitor asks in English or German and gets the approved answer as text and an AI voice, labeled machine-translated. If it is not sure, it says Noor will answer. Matching is plain rules, on purpose, and we tested it on real questions from Gambian operators' FAQ pages. [Quote the measured numbers from the What's real tab.]"
 
-**2:55 Scene 4, one-tap Google review (25 s).** Runbook scene 4. "After the tour the visitor speaks their review. The AI writes it down as clean text without changing a fact or the feeling. They tap the same link everyone gets, paste, and choose their own stars. We never post for them, and there is no review gating."
+**2:25 Scene 4, the Google listing (20 s).** Runbook scene 4. "From her approved answers Teranga builds a Google listing draft: description, services, meeting point, how to book. It shows what is missing and which question to record next. It never invents a phone number or hours, and it sends nothing to Google: a person publishes it."
 
-**3:20 Scene 5, cross-community recommendation (20 s).** Runbook scene 5. "A visitor can opt in to a suggestion for another tour. It rotates fairly between partner operators, no money, no number shared, and a person passes on the contact. The partners here are fictional and this part is simulated."
+**2:45 Scene 5, one-tap Google review (20 s).** Runbook scene 5. "After the tour the visitor speaks their review. The AI writes it down without changing a fact or the feeling. They tap the same link everyone gets, paste, and choose their own stars. We never post for them, and there is no review gating."
 
-**3:40 Scene 6, coaching (20 s).** Runbook scene 6. "From real public Google Maps reviews, a small sample, Noor gets plain advice in Wolof. If there is not enough data, it says so."
+**3:05 Scene 6, the community champion (40 s).** Runbook scene 6. "Every operator has a household champion. A community has one too. When a road floods, the community champion sends one notice: members get an SMS in Wolof, visitors see it under every answer in their language, fixed wording, never machine-translated in an emergency, always labeled a community notice, not an official warning. And when a household helper is unsure about a translation, a bilingual person in the community checks it." [One sourced line: almost a fifth of the country's land is less than 5 metres above sea level, World Bank, 2015.]
 
-**4:00 Limits and what is next (20 s).** Read the limits from the runbook section 8 plainly: synthetic audio, unverified Wolof, SMS pending registration, simulated parts labeled. "Next: a native Wolof speaker to test recognition and wording, and real partner operators."
+**3:45 Scene 7, no internet needed (20 s).** Runbook scene 7. "Noor texts COACH from her phone and gets her coaching as a plain message she can keep all week. Today the text arrives on WhatsApp because US carrier registration is still in review. Say so."
+
+**4:05 Scene 8, coaching (20 s).** Runbook scene 8. "From real public Google Maps reviews, a small sample, Noor gets plain advice in Wolof. If there is not enough data, it says so."
+
+**4:25 Limits and what is next (25 s).** Read the limits from the runbook section 10 plainly: synthetic audio, unverified Wolof, SMS pending registration, simulated parts labeled, features not yet tried by real users. "Next: a native Wolof speaker to test recognition and wording, real partner operators, and community champions in real circles."
+
+**Short cut (about 3 minutes 30 seconds):** problem, why AI, scene 1, scene 2, scene 3, scene 6, limits.
 
 ## Model and data notes for the submission text
 
