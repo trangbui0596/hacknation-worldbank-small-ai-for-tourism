@@ -2,7 +2,7 @@
  {
   "scene": "00_problem",
   "seconds": 21.2,
-  "text": "Meet Noor, a fictional tour operator in The Gambia. Tourism earned the country one hundred fifty seven million US dollars in twenty nineteen, and about half of Gambians are still not online. Tourists write in English, German and Dutch. Noor speaks Wolof on a basic phone. Every enquiry she can't read is a booking she can't win."
+  "text": "Meet Noor, a fictional tourism operator in The Gambia. Tourism earned the country one hundred fifty seven million US dollars in twenty nineteen, and about half of Gambians are still not online. Tourists write in English, German and Dutch. Noor speaks Wolof on a basic phone. Every enquiry she can't read is a booking she can't win."
  },
  {
   "scene": "01_idea",
@@ -47,6 +47,6 @@
  {
   "scene": "09_limits",
   "seconds": 33.0,
-  "text": "What is real: the call, the transcription, the approvals, the tourist answers and the voice are live. What is not: the Wolof audio is synthetic, the Wolof wording is unverified by a native speaker, S M S delivery waits for registration, and the partner operators are simulated. Next: a native Wolof speaker, real partner operators, and real community champions. Because of this tool, a Gambian tour operator will answer tourists in their own language, with her own approved words. Thank you."
+  "text": "What is real: the call, the transcription, the approvals, the tourist answers and the voice are live. What is not: the Wolof audio is synthetic, the Wolof wording is unverified by a native speaker, S M S delivery waits for registration, and the partner operators are simulated. Next: a native Wolof speaker, real partner operators, and real community champions. A Gambian tourism operator can now answer tourists in their own language, in her own approved words. Thank you."
  }
 ]

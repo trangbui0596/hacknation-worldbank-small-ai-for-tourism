@@ -6,14 +6,14 @@ Status: DRAFT. Items marked **[OPEN]** are undecided or unverified.
 
 ## 1. What it is
 
-A tour operator in The Gambia records answers about her tour in her own language on a
+A tourism operator in The Gambia records answers about her tour in her own language on a
 feature phone, offline. Once a week a family member's smartphone gets online and the
 tool transcribes, translates (English first, then German and Dutch), voices, and
 publishes those pre-approved answers. Visitors scan a QR code or message WhatsApp and
 get the nearest pre-approved answer as voice and text in their language.
 
 Video one-liner (required format) — DRAFT:
-> Because of this tool, a Gambian tour operator will answer visitors in English, German
+> Within a week of one phone call, a Gambian tourism operator on a basic phone can answer visitors in English, German and Dutch, by voice or text, in her own approved words. Plain SMS gives her coaching, a Google listing and community notices, with a household champion and a community champion behind her. Today she misses or answers late the enquiries she can't read; the World Bank figures above show how much tourism earns and how many Gambians are still offline.
 > and Dutch with her own pre-approved words, every week, instead of losing enquiries she
 > cannot read or reply to; we know because **[OPEN: cite verified UN Tourism / WDI /
 > Enterprise Surveys figures with year and country]**.

@@ -22,11 +22,11 @@ Not sourced (do not state as fact): language barriers, share of operators with a
 
 ## Required one-liner (use this wording on screen and aloud)
 
-"Because of this tool, a Gambian tour operator will answer visitors in English, German and Dutch with her own pre-approved words within a week of one phone call, backed by a household champion and a community champion and keeping her coaching, Google listing progress and community notices as plain SMS, work she would otherwise miss, answer late or answer badly because she cannot read or reply to online enquiries; we know because the World Bank figures above show how much tourism earns and how many Gambians are still offline. This is the gap we target, not a measured result."
+"Within a week of one phone call, a Gambian tourism operator on a basic phone can answer visitors in English, German and Dutch, by voice or text, in her own approved words. Plain SMS gives her coaching, a Google listing and community notices, with a household champion and a community champion behind her. Today she misses or answers late the enquiries she can't read; the World Bank figures above show how much tourism earns and how many Gambians are still offline. This is the gap we target, not a measured result."
 
 ## Script (full cut about 4 minutes 50 seconds; limit 5:00)
 
-**0:00 The problem (20 s).** "Meet Noor, a fictional tour operator in The Gambia. She knows her tours. Visitors write in English, German or Dutch. She speaks Wolof and has a basic phone. Tourism earned The Gambia US$157 million in 2019, and about half of Gambians are still not online. [Show the numbers on the live page; every one links to the World Bank.]"
+**0:00 The problem (20 s).** "Meet Noor, a fictional tourism operator in The Gambia. She knows her tours. Visitors write in English, German or Dutch. She speaks Wolof and has a basic phone. Tourism earned The Gambia US$157 million in 2019, and about half of Gambians are still not online. [Show the numbers on the live page; every one links to the World Bank.]"
 
 **0:20 Why AI, not just SMS (20 s).** "Teranga is Wolof for hospitality. Plain SMS cannot hear Wolof, cannot translate and check the meaning, and cannot speak an answer in a visitor's language. Teranga does all three, and Noor never needs the internet: she records by phone call and keeps what she needs as text messages." [On screen: the 'Works offline' and 'AI beyond SMS' tabs.]
 

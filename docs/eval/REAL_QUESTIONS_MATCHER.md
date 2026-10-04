@@ -236,7 +236,7 @@ In scope (12):
 
 | Question (label) | First pass | Now |
 |---|---|---|
-| Are you a licensed and registered tour operator? (safety) | Not sure | right |
+| Are you a licensed and registered tourism operator? (safety) | Not sure | right |
 | Can you organise private tours for our group? (how to book) | Not sure | right |
 | Do you offer private tours in Gambia? (how to book) | Not sure | right |
 | Can I swim in the Gambia River? (safety) | Not sure | right |

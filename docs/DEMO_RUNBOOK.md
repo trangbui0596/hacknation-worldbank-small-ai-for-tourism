@@ -1,7 +1,7 @@
 # Teranga demo runbook (for the 2 to 5 minute video)
 
 Live app: https://teranga-gambia.lovable.app. Code: https://github.com/trangbui0596/teranga-gambia (branch main).
-Persona: Noor, a FICTIONAL tour operator in The Gambia. Test audio is SYNTHETIC (ElevenLabs reading Wolof text), not a real speaker.
+Persona: Noor, a FICTIONAL tourism operator in The Gambia. Test audio is SYNTHETIC (ElevenLabs reading Wolof text), not a real speaker.
 
 ## 0. Before recording (do once, about 10 minutes)
 

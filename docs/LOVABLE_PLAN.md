@@ -83,7 +83,7 @@ Recordings are deletable on request.
 ## 6. Draft project knowledge (to paste into the Lovable project)
 
 ```
-Teranga Gambia: pre-approved answers for tour operators. Rules that always apply:
+Teranga Gambia: pre-approved answers for tourism operators. Rules that always apply:
 - The tool only says what the operator recorded and the champion approved. Never invent answers.
 - The champion may not speak English. No review step may require judging English.
 - Every visitor-facing answer is labeled "machine-translated". Wolof translations are
