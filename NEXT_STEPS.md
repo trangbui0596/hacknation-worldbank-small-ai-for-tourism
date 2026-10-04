@@ -94,6 +94,13 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Demo plan: say clearly that SMS awaits carrier registration and the fallback delivered the message on WhatsApp; showing the A2P status screen is honest evidence.
 - Queued in Lovable at this point: Wolof-first COACH (templates, COACH EN), call scoped to 2 questions (price pos 1, children pos 5) with slower pacing and "Got [N] of [M] answers", read-only log diagnosis of the SMS failure.
 
+## Update 12: LOVABLE OUT OF CREDITS; known COACH bug (2026-10-04 ~01:50 UTC)
+- Lovable `send_message` now fails: "workspace is out of credits" (https://lovable.dev/settings/billing). `deploy_project` still works. No more code changes are possible until credits are added (the Lovable repo is NOT linked to GitHub, so nothing can be edited here either).
+- SMS root cause found: secret `TWILIO_SMS_FROM` was missing (the user had created `TWILIO_SMS_NUMBER`), so the app never called Twilio and used the WhatsApp fallback. The user then added `TWILIO_SMS_FROM` (must be UPPERCASE). Even with it, US SMS is blocked until the A2P campaign is approved (number shows "Messaging disabled").
+- Published latest commit 74d9489 (deployment 1538016d): call flow now asks 2 questions (card positions 1 price and 5 children), slower pacing, summary "Got N of 2 answers"; plus Wolof-first COACH templates (commit 450399b, 71+ tests; 77 tests total).
+- KNOWN BUG (unfixed, needs credits): in the Wolof-first COACH refactor, the "Actions" section is built from the top POSITIVE themes and shows e.g. "56 of 70 reviews complain" for guide quality. The earlier English output (commit 7329e39) listed real complaint themes correctly (boat/equipment 2/70, children 2/70, duration 2/70). Until fixed, do NOT demo COACH/COACH EN actions. Fix spec: actions only from complaint counts, sorted descending, max 5, mapped to card topics, plus tests (see conversation).
+- Wolof strings are machine-translated and unverified; back-translation drift was found and corrected for 6 strings.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
