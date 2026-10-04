@@ -99,8 +99,9 @@ Say first: "Every operator has a household champion. A community has one too."
 
 1. On the demo phone open the Messages app (not WhatsApp) and text `COACH` to the Twilio number.
 2. Expected: if US SMS registration has cleared, the coaching arrives as an SMS in Wolof (three parts at most). Until then the same text arrives on WhatsApp, starting "SMS copy (shown here because US SMS registration is pending)". Say that out loud; it is true.
-3. Say: "Noor needs no internet. She records by phone call and keeps her coaching, listing progress and community notices as plain text messages, and can text COACH, LISTING or WEEK to get them again."
-4. Optional: text `LISTING` or `WEEK` the same way.
+3. If SMS is still blocked, ALSO show the "Try SMS" tab on the live page: pick "I am Noor", tap COACH, LISTING, WEEK; then "I am a visitor" and ask a question. Say plainly: "This is a simulation of the SMS. It uses the same code and demo data. US carrier registration is still in review; once approved, nothing changes in the code." (Never present the simulator as a live delivery.)
+4. Say: "Noor needs no internet. She records by phone call and keeps her coaching, listing progress and community notices as plain text messages, and can text COACH, LISTING or WEEK to get them again."
+5. Optional: text `LISTING` or `WEEK` the same way. `WEEK` is the weekly learning: what visitors asked, how the public reviews moved since last week, and up to three actions.
 
 ## 8. Scene: coaching from real public reviews (about 20 seconds)
 
@@ -109,6 +110,7 @@ Say first: "Every operator has a household champion. A community has one too."
 
 ## 9. Optional scenes (only if time allows and they were tested)
 
+- Weekly sync: in helper mode send `SYNC` (report on WhatsApp plus an SMS copy to Noor). The full scheduled version is `POST /api/public/weekly-sync` with the digest secret: it re-scans public reviews first (takes about 30 seconds).
 - Weekly digest: trigger with the digest secret; Noor gets it by SMS in Wolof (counts only), the helper's WhatsApp fallback has the full text.
 
 ## 10. What to say about limits (honest, required)
