@@ -3,25 +3,30 @@
 Track: World Bank x Hack-Nation "Small AI for Development", Tourism.
 Companion: `docs/DEMO_RUNBOOK.md` (exact steps and what to click). Persona Noor is fictional. All Wolof test audio is synthetic.
 
-## Evidence (verified 2026-10-04 from the World Bank WDI API, country GMB)
+## Evidence (verified 2026-10-04 against the World Bank WDI API, country GMB; links on the live page)
 
-| Fact | Value | Year | WDI indicator |
+| Fact | Value | Year | WDI indicator (data page: https://data.worldbank.org/indicator/CODE?locations=GM) |
 |---|---|---|---|
+| International tourism receipts | US$157 million | 2019 (last year before COVID) | ST.INT.RCPT.CD |
+| Tourism receipts as share of exports | 43.6% | 2019 | ST.INT.RCPT.XP.ZS |
+| International tourism arrivals | 620,000 | 2019 | ST.INT.ARVL |
+| COVID year for comparison | US$53 million receipts, 246,000 arrivals | 2020 | ST.INT.RCPT.CD, ST.INT.ARVL |
 | Individuals using the Internet | 49.5% of population | 2024 | IT.NET.USER.ZS |
-| Mobile cellular subscriptions | 126 per 100 people | 2024 | IT.CEL.SETS.P2 |
-| International tourism receipts | US$53 million, 30.2% of exports | 2020 (latest value in the series; a COVID year) | ST.INT.RCPT.CD, ST.INT.RCPT.XP.ZS |
-| International tourism arrivals | 246,000 | 2020 (latest value in the series; a COVID year) | ST.INT.ARVL |
+| Mobile cellular subscriptions | 126 per 100 people (SIM subscriptions, not unique users) | 2024 | IT.CEL.SETS.P2 |
+| Self-employed share of employment | 68.6% (ILO modeled estimate) | 2025 | SL.EMP.SELF.ZS |
 
-What this shows: tourism matters to the economy, and about half the population is not online while mobile phones are everywhere. It does NOT show that operators lose enquiries or that Teranga fixes it. Say "the gap we target", not "proof".
-Not yet sourced (do not state as fact): language barriers, share of operators with a smartphone, lost enquiries, translation quality for Wolof.
+All values live in `src/lib/evidence.ts` in the app repo; `node scripts/verify-evidence.mjs` re-checks them against the live API. Do not say a number that is not in that file.
+
+What this shows: tourism is a large part of the economy, and about half the population is not online while mobile subscriptions outnumber people. It does NOT show that operators lose enquiries or that Teranga fixes it. Say "the gap we target", not "proof".
+Not sourced (do not state as fact): language barriers, share of operators with a smartphone, lost enquiries, translation quality for Wolof.
 
 ## Required one-liner (use this wording on screen and aloud)
 
-"Because of this tool, a Gambian tour operator will be able to answer visitors in English, German and Dutch with her own pre-approved words instead of missing enquiries she cannot read or reply to. The need: about half of Gambians were not online in 2024 (49.5%, World Bank), while tourism brought in 30% of exports in 2020. This is the gap we target, not a measured result."
+"Because of this tool, a Gambian tour operator will be able to answer visitors in English, German and Dutch with her own pre-approved words instead of missing enquiries she cannot read or reply to. The need: only 49.5% of people in The Gambia used the Internet in 2024, while tourism brought in 43.6% of exports in 2019, the last year before COVID. This is the gap we target, not a measured result."
 
 ## Script (target 4 minutes 15 seconds; limit 5:00)
 
-**0:00 The problem (20 s).** "Meet Noor, a fictional tour operator in The Gambia. She knows her tours. Visitors write in English, German or Dutch. She speaks Wolof and has a basic phone. About half of Gambians are not online. [Show the evidence table.]"
+**0:00 The problem (20 s).** "Meet Noor, a fictional tour operator in The Gambia. She knows her tours. Visitors write in English, German or Dutch. She speaks Wolof and has a basic phone. Tourism earned The Gambia US$157 million in 2019, and about half of Gambians are still not online. [Show the numbers on the live page; every one links to the World Bank.]"
 
 **0:20 Why AI, not just SMS (25 s).** "Teranga is Wolof for hospitality. Plain SMS cannot do three things Noor needs. It cannot hear Wolof. It cannot translate her words and check the meaning survived. It cannot speak an answer in a visitor's language. Teranga does all three, and it never makes up an answer." [On screen: the three icons or the 'What the AI does that plain SMS cannot' section of the live page.]
 
