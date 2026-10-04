@@ -108,6 +108,11 @@ Deadline: 9:00 AM ET, Oct 4, 2026 (prototype + 2–5 min video).
 - Published the matcher fix (deployment from commit b2d4e23).
 - Unresolved question: why Lovable's sample Wolof COACH showed only praise lines in actions (code orders complaints first; probably test data). Verify live with COACH (24 h cache from ~00:14 UTC).
 
+## Update 14: Wolof champion messages shipped from Claude Code (2026-10-04 ~01:15 UTC)
+- User topped up 50 Lovable credits; policy: do code in Claude Code (repo trangbui0596/teranga-gambia, push to main, then `deploy_project`), use Lovable agent credits only when it is truly needed.
+- Commit 559978d: champion-facing messages now Wolof first, English second (menu, "Got question N", question prompts, round hint/stop/help, review queue labels, approval confirmations, "still processing", transcript-heard message). Fixed templates in `src/lib/champion.templates.ts`; UNVERIFIED Wolof written by Claude, no native review. 88 tests pass. NOT yet tested live on WhatsApp.
+- Not localized yet: agent chat replies (LLM; told to answer in the champion's language), digest/SMS text, FEEDBACK flow, MORE/LISTING demos.
+
 ## Blocked on (old; resolved above)
 - `ELEVENLABS_API_KEY` was saved as an environment variable but was not visible in the
   earlier session (container predates the change). A NEW session should have it. Never
