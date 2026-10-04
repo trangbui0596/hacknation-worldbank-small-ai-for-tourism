@@ -510,6 +510,26 @@
     "capture": "search_extract"
   },
   {
+    "question": "Where does the tour start?",
+    "language": "en",
+    "source_url": "https://www.gambiajobetoursandtravel.com/tour-day-adventures-explore-gambia/kunta-kinteh-island-historic-tour",
+    "source_name": "Gambia Jobe Tours & Travel - Kunta Kinteh Island Historic Tour page (FAQ)",
+    "retrieved": "2026-10-04",
+    "topic_label": "meeting point",
+    "rewritten": false,
+    "capture": "search_extract"
+  },
+  {
+    "question": "How long is the tour?",
+    "language": "en",
+    "source_url": "https://www.gambiajobetoursandtravel.com/tour-day-adventures-explore-gambia/kunta-kinteh-island-historic-tour",
+    "source_name": "Gambia Jobe Tours & Travel - Kunta Kinteh Island Historic Tour page (FAQ)",
+    "retrieved": "2026-10-04",
+    "topic_label": "duration",
+    "rewritten": false,
+    "capture": "search_extract"
+  },
+  {
     "question": "What should I bring?",
     "language": "en",
     "source_url": "https://www.gambiajobetoursandtravel.com/tour-day-adventures-explore-gambia/kunta-kinteh-island-historic-tour",
@@ -526,6 +546,16 @@
     "source_name": "Gambia Jobe Tours & Travel - Kunta Kinteh Island Historic Tour page (FAQ)",
     "retrieved": "2026-10-04",
     "topic_label": "how to book",
+    "rewritten": false,
+    "capture": "search_extract"
+  },
+  {
+    "question": "What is included in the Gambian Home Cooking Experience?",
+    "language": "en",
+    "source_url": "https://www.gambiajobetoursandtravel.com/tour-day-adventures-explore-gambia/gambian-home-cooking-experience",
+    "source_name": "Gambia Jobe Tours & Travel - Gambian Home Cooking Experience page (FAQ)",
+    "retrieved": "2026-10-04",
+    "topic_label": "whats included",
     "rewritten": false,
     "capture": "search_extract"
   },
